@@ -1,0 +1,22 @@
+Random Forest:
+              precision    recall  f1-score   support
+
+        High       0.29      0.40      0.33         5
+         Low       0.67      0.40      0.50         5
+      Medium       0.20      0.20      0.20         5
+
+    accuracy                           0.33        15
+   macro avg       0.38      0.33      0.34        15
+weighted avg       0.38      0.33      0.34        15
+
+
+Decision Tree:
+              precision    recall  f1-score   support
+
+        High       0.45      1.00      0.62         5
+         Low       1.00      0.20      0.33         5
+      Medium       0.33      0.20      0.25         5
+
+    accuracy                           0.47        15
+   macro avg       0.60      0.47      0.40        15
+weighted avg       0.60      0.47      0.40        15
