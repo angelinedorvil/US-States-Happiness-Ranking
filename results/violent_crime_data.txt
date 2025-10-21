@@ -1,0 +1,153 @@
+                                                                                                 State  violent_crime_rate  violent_crime_norm
+             ALABAMA Metropolitan Statistical Area nan 3709622 nan nan nan nan nan nan nan nan nan nan              519.60           56.505497
+                 ALABAMA Metropolitan Statistical Area nan 3728978 nan nan nan nan nan nan nan nan nan              510.80           57.444765
+             ALABAMA Metropolitan Statistical Area nan 3732789 nan nan nan nan nan nan nan nan nan nan              524.20           56.014516
+                   ALASKA Metropolitan Statistical Area nan 339740 nan nan nan nan nan nan nan nan nan              867.10           19.415092
+               ALASKA Metropolitan Statistical Area nan 343648 nan nan nan nan nan nan nan nan nan nan              885.00           17.504536
+               ALASKA Metropolitan Statistical Area nan 348650 nan nan nan nan nan nan nan nan nan nan              829.00           23.481695
+             ARIZONA Metropolitan Statistical Area nan 6665732 nan nan nan nan nan nan nan nan nan nan              508.00           57.743623
+             ARIZONA Metropolitan Statistical Area nan 6820581 nan nan nan nan nan nan nan nan nan nan              474.90           61.276550
+                 ARIZONA Metropolitan Statistical Area nan 6926575 nan nan nan nan nan nan nan nan nan              455.30           63.368556
+            ARKANSAS Metropolitan Statistical Area nan 1870966 nan nan nan nan nan nan nan nan nan nan              554.90           52.737752
+            ARKANSAS Metropolitan Statistical Area nan 1902947 nan nan nan nan nan nan nan nan nan nan              543.60           53.943857
+                ARKANSAS Metropolitan Statistical Area nan 1912942 nan nan nan nan nan nan nan nan nan              584.60           49.567723
+             CALIFORNIA Metropolitan Statistical Area nan 38682717 nan nan nan nan nan nan nan nan nan              441.20           64.873519
+         CALIFORNIA Metropolitan Statistical Area nan 38706996 nan nan nan nan nan nan nan nan nan nan              449.30           64.008966
+         CALIFORNIA Metropolitan Statistical Area nan 38726576 nan nan nan nan nan nan nan nan nan nan              447.40           64.211762
+              COLORADO Metropolitan Statistical Area nan 4904129 nan nan nan nan   nan nan nan nan nan              368.10           72.675846
+              COLORADO Metropolitan Statistical Area nan 4986493 nan nan nan nan   nan nan nan nan nan              397.20           69.569858
+                  COLORADO Metropolitan Statistical Area nan 5045741 nan nan nan nan   nan nan nan nan              381.00           71.298965
+             CONNECTICUT Metropolitan Statistical Area nan 2964813 nan nan nan nan nan nan nan nan nan              183.60           92.368449
+         CONNECTICUT Metropolitan Statistical Area nan 2967056 nan nan nan nan nan nan nan nan nan nan              228.00           87.629416
+         CONNECTICUT Metropolitan Statistical Area nan 2980253 nan nan nan nan nan nan nan nan nan nan              207.40           89.828157
+             DELAWARE Metropolitan Statistical Area nan 961939 nan nan nan nan nan nan nan nan nan nan              453.40           63.571352
+             DELAWARE Metropolitan Statistical Area nan 967171 nan nan nan nan nan nan nan nan nan nan              423.60           66.752055
+                 DELAWARE Metropolitan Statistical Area nan 973764 nan nan nan nan nan nan nan nan nan              422.60           66.858790
+DISTRICT OF COLUMBIA3 Metropolitan Statistical Area nan 693972 nan nan nan nan nan nan nan nan nan nan             1004.90            4.707012
+DISTRICT OF COLUMBIA3 Metropolitan Statistical Area nan 702455 nan nan nan nan nan nan nan nan nan nan              995.90            5.667627
+    DISTRICT OF COLUMBIA3 Metropolitan Statistical Area nan 705749 nan nan nan nan nan nan nan nan nan             1049.00            0.000000
+                FLORIDA Metropolitan Statistical Area nan 20272180   nan nan nan nan   nan nan nan nan              408.00           68.417120
+                FLORIDA Metropolitan Statistical Area nan 20609181   nan nan nan nan   nan nan nan nan              384.90           70.882698
+                    FLORIDA Metropolitan Statistical Area nan 20789824   nan nan nan nan   nan nan nan              378.40           71.576476
+             GEORGIA Metropolitan Statistical Area nan 8648476 nan nan nan nan nan nan nan nan nan nan              357.20           73.839257
+             GEORGIA Metropolitan Statistical Area nan 8732372 nan nan nan nan nan nan nan nan nan nan              326.60           77.105347
+                 GEORGIA Metropolitan Statistical Area nan 8820462 nan nan nan nan nan nan nan nan nan              340.70           75.600384
+                  HAWAII Metropolitan Statistical Area nan 1142377 nan nan nan nan nan nan nan nan nan              285.50           81.492155
+              HAWAII Metropolitan Statistical Area nan 1148121 nan nan nan nan nan nan nan nan nan nan              248.60           85.430676
+              HAWAII Metropolitan Statistical Area nan 1156252 nan nan nan nan nan nan nan nan nan nan              250.60           85.217206
+                 IDAHO Metropolitan Statistical Area nan 1262172 nan nan nan nan nan   nan nan nan nan              226.40           87.800192
+                 IDAHO Metropolitan Statistical Area nan 1300470 nan nan nan nan nan   nan nan nan nan              227.10           87.725478
+                     IDAHO Metropolitan Statistical Area nan 1328563 nan nan nan nan nan   nan nan nan              223.80           88.077703
+               ILLINOIS Metropolitan Statistical Area nan 11250485 nan nan nan nan nan nan nan nan nan              406.90           68.534529
+           ILLINOIS Metropolitan Statistical Area nan 11305797 nan nan nan nan nan nan nan nan nan nan              404.10           68.833387
+           ILLINOIS Metropolitan Statistical Area nan 11331892 nan nan nan nan nan nan nan nan nan nan              438.80           65.129683
+             INDIANA Metropolitan Statistical Area nan 5204012 nan nan nan nan nan nan nan nan nan nan              399.00           69.377735
+             INDIANA Metropolitan Statistical Area nan 5228617 nan nan nan nan nan nan nan nan nan nan              316.20           78.215391
+                 INDIANA Metropolitan Statistical Area nan 5267529 nan nan nan nan nan nan nan nan nan              370.80           72.387661
+                  IOWA Metropolitan Statistical Area nan 1875128   nan nan nan nan nan nan nan nan nan              293.40           80.648949
+                      IOWA Metropolitan Statistical Area nan 1936796   nan nan nan nan nan nan nan nan              266.60           83.509446
+                KANSAS Metropolitan Statistical Area nan 1983302   nan nan nan nan nan nan nan nan nan              413.00           67.883445
+                KANSAS Metropolitan Statistical Area nan 2018178   nan nan nan nan nan nan nan nan nan              439.00           65.108336
+                    KANSAS Metropolitan Statistical Area nan 2025373   nan nan nan nan nan nan nan nan              410.80           68.118262
+                KENTUCKY Metropolitan Statistical Area nan 2621479   nan nan nan nan   nan nan nan nan              225.80           87.864233
+                KENTUCKY Metropolitan Statistical Area nan 2659106   nan nan nan nan   nan nan nan nan              211.90           89.347849
+                    KENTUCKY Metropolitan Statistical Area nan 2664226   nan nan nan nan   nan nan nan              217.10           88.792827
+                   LOUISIANA Metropolitan Statistical Area nan 3915216   nan nan nan nan   nan nan nan              549.30           53.335468
+               LOUISIANA Metropolitan Statistical Area nan 3921292   nan nan nan nan   nan nan nan nan              537.50           54.594941
+               LOUISIANA Metropolitan Statistical Area nan 3929950   nan nan nan nan   nan nan nan nan              557.00           52.513609
+                MAINE Metropolitan Statistical Area nan 793252 nan nan nan nan nan nan nan nan nan nan              121.00           99.050059
+                MAINE Metropolitan Statistical Area nan 794794 nan nan nan nan nan nan nan nan nan nan              112.10          100.000000
+                    MAINE Metropolitan Statistical Area nan 799195 nan nan nan nan nan nan nan nan nan              115.20           99.669122
+            MARYLAND Metropolitan Statistical Area nan 5893251 nan nan nan nan nan nan nan nan nan nan              468.70           61.938307
+                MARYLAND Metropolitan Statistical Area nan 5895999 nan nan nan nan nan nan nan nan nan              454.10           63.496638
+            MARYLAND Metropolitan Statistical Area nan 5901111 nan nan nan nan nan nan nan nan nan nan              500.20           58.576155
+       MASSACHUSETTS Metropolitan Statistical Area nan 6760988 nan nan nan nan nan nan nan nan nan nan              358.00           73.753869
+           MASSACHUSETTS Metropolitan Statistical Area nan 6863792 nan nan nan nan nan nan nan nan nan              327.60           76.998612
+       MASSACHUSETTS Metropolitan Statistical Area nan 6873328 nan nan nan nan nan nan nan nan nan nan              338.10           75.877895
+            MICHIGAN Metropolitan Statistical Area nan 8164062 nan nan nan nan nan nan nan nan nan nan              450.00           63.934251
+                MICHIGAN Metropolitan Statistical Area nan 8189617 nan nan nan nan nan nan nan nan nan              437.40           65.279112
+            MICHIGAN Metropolitan Statistical Area nan 8193112 nan nan nan nan nan nan nan nan nan nan              449.40           63.998292
+           MINNESOTA Metropolitan Statistical Area nan 4335177 nan nan nan nan nan nan nan nan nan nan              238.30           86.530046
+           MINNESOTA Metropolitan Statistical Area nan 4367933 nan nan nan nan nan nan nan nan nan nan              220.40           88.440602
+               MINNESOTA Metropolitan Statistical Area nan 4394131 nan nan nan nan nan nan nan nan nan              257.15           84.518092
+           MISSISSIPPI Metropolitan Statistical Area nan 1382070   nan nan nan nan nan nan nan nan nan              285.70           81.470808
+           MISSISSIPPI Metropolitan Statistical Area nan 1437099   nan nan nan nan nan nan nan nan nan              234.40           86.946312
+              MISSOURI Metropolitan Statistical Area nan 4571538   nan nan nan nan nan nan nan nan nan              530.30           55.363433
+              MISSOURI Metropolitan Statistical Area nan 4592956   nan nan nan nan nan nan nan nan nan              502.10           58.373359
+                  MISSOURI Metropolitan Statistical Area nan 4606823   nan nan nan nan nan nan nan nan              495.00           59.131177
+                MONTANA Metropolitan Statistical Area nan 370184   nan nan nan nan nan nan nan nan nan              377.10           71.715231
+                MONTANA Metropolitan Statistical Area nan 382078   nan nan nan nan nan nan nan nan nan              374.10           72.035436
+                    MONTANA Metropolitan Statistical Area nan 382587   nan nan nan nan nan nan nan nan              404.90           68.747999
+            NEBRASKA Metropolitan Statistical Area nan 1253777 nan nan nan nan nan nan nan nan nan nan              305.90           79.314761
+            NEBRASKA Metropolitan Statistical Area nan 1255602 nan nan nan nan nan nan nan nan nan nan              284.80           81.566869
+                NEBRASKA Metropolitan Statistical Area nan 1264647 nan nan nan nan nan nan nan nan nan              300.90           79.848436
+              NEVADA Metropolitan Statistical Area nan 2724009 nan nan nan nan nan nan nan nan nan nan              555.90           52.631017
+              NEVADA Metropolitan Statistical Area nan 2759691 nan nan nan nan nan nan nan nan nan nan              541.10           54.210695
+                  NEVADA Metropolitan Statistical Area nan 2801329 nan nan nan nan nan nan nan nan nan              493.80           59.259259
+        NEW HAMPSHIRE Metropolitan Statistical Area nan 844743 nan nan nan nan nan nan nan nan nan nan              198.70           90.756751
+        NEW HAMPSHIRE Metropolitan Statistical Area nan 854544 nan nan nan nan nan nan nan nan nan nan              173.20           93.478493
+            NEW HAMPSHIRE Metropolitan Statistical Area nan 857832 nan nan nan nan nan nan nan nan nan              152.50           95.687907
+              NEW JERSEY Metropolitan Statistical Area nan 8882190 nan nan nan nan nan nan nan nan nan              206.90           89.881524
+          NEW JERSEY Metropolitan Statistical Area nan 8908520 nan nan nan nan nan nan nan nan nan nan              208.10           89.753442
+          NEW JERSEY Metropolitan Statistical Area nan 9005644 nan nan nan nan nan nan nan nan nan nan              228.80           87.544028
+              NEW MEXICO Metropolitan Statistical Area nan 1392948   nan nan nan nan   nan nan nan nan              783.50           28.338136
+              NEW MEXICO Metropolitan Statistical Area nan 1408549   nan nan nan nan   nan nan nan nan              856.60           20.535810
+                  NEW MEXICO Metropolitan Statistical Area nan 1411105   nan nan nan nan   nan nan nan              832.20           23.140143
+               NEW YORK Metropolitan Statistical Area nan 18100822 nan nan nan nan nan nan nan nan nan              358.60           73.689828
+           NEW YORK Metropolitan Statistical Area nan 18197801 nan nan nan nan nan nan nan nan nan nan              350.50           74.554381
+           NEW YORK Metropolitan Statistical Area nan 18471765 nan nan nan nan nan nan nan nan nan nan              356.70           73.892625
+          NORTH CAROLINA Metropolitan Statistical Area nan 8503759 nan nan nan nan nan nan nan nan nan              371.80           72.280926
+     NORTH CAROLINA4 Metropolitan Statistical Area nan 8060478 nan nan nan nan nan nan nan nan nan nan              363.70           73.145480
+     NORTH CAROLINA5 Metropolitan Statistical Area nan 8401289 nan nan nan nan nan nan nan nan nan nan              377.60           71.661864
+           NORTH DAKOTA Metropolitan Statistical Area nan 376890   nan nan nan nan nan nan nan nan nan              281.30           81.940442
+           NORTH DAKOTA Metropolitan Statistical Area nan 379498   nan nan nan nan nan nan nan nan nan              280.60           82.015156
+               NORTH DAKOTA Metropolitan Statistical Area nan 382454   nan nan nan nan nan nan nan nan              288.90           81.129256
+                OHIO Metropolitan Statistical Area nan 9298408 nan nan nan nan nan nan nan nan nan nan              297.50           80.211335
+                OHIO Metropolitan Statistical Area nan 9376628 nan nan nan nan nan nan nan nan nan nan              279.90           82.089871
+            OKLAHOMA Metropolitan Statistical Area nan 2621457 nan nan nan nan nan nan nan nan nan nan              466.10           62.215818
+                OKLAHOMA Metropolitan Statistical Area nan 2636166 nan nan nan nan nan nan nan nan nan              358.10           73.743196
+            OKLAHOMA Metropolitan Statistical Area nan 2655595 nan nan nan nan nan nan nan nan nan nan              456.20           63.272494
+              OREGON Metropolitan Statistical Area nan 3476871 nan nan nan nan nan nan nan nan nan nan              281.80           81.887074
+              OREGON Metropolitan Statistical Area nan 3518314 nan nan nan nan nan nan nan nan nan nan              285.50           81.492155
+       PENNSYLVANIA Metropolitan Statistical Area nan 11340583 nan nan nan nan nan nan nan nan nan nan              313.30           78.524923
+       PENNSYLVANIA Metropolitan Statistical Area nan 11353779 nan nan nan nan nan nan nan nan nan nan              306.00           79.304088
+           PENNSYLVANIA Metropolitan Statistical Area nan 11356999 nan nan nan nan nan nan nan nan nan              306.40           79.261394
+         PUERTO RICO Metropolitan Statistical Area nan 3079741 nan nan nan nan nan nan nan nan nan nan              200.80           90.532608
+         PUERTO RICO Metropolitan Statistical Area nan 3190926 nan nan nan nan nan nan nan nan nan nan              232.60           87.138435
+             PUERTO RICO Metropolitan Statistical Area nan 3193694 nan nan nan nan nan nan nan nan nan              202.90           90.308464
+        RHODE ISLAND Metropolitan Statistical Area nan 1057315 nan nan nan nan nan nan nan nan nan nan              219.10           88.579357
+            RHODE ISLAND Metropolitan Statistical Area nan 1059361 nan nan nan nan nan nan nan nan nan              221.10           88.365888
+        RHODE ISLAND Metropolitan Statistical Area nan 1059639 nan nan nan nan nan nan nan nan nan nan              232.20           87.181129
+        SOUTH CAROLINA Metropolitan Statistical Area nan 4279294 nan nan nan nan nan   nan nan nan nan              506.20           57.935746
+        SOUTH CAROLINA Metropolitan Statistical Area nan 4347374 nan nan nan nan nan   nan nan nan nan              488.30           59.846302
+            SOUTH CAROLINA Metropolitan Statistical Area nan 4412435 nan nan nan nan nan   nan nan nan              511.30           57.391397
+           SOUTH DAKOTA Metropolitan Statistical Area nan 420829   nan nan nan nan nan nan nan nan nan              404.70           68.769346
+           SOUTH DAKOTA Metropolitan Statistical Area nan 420832   nan nan nan nan nan nan nan nan nan              433.60           65.684705
+               SOUTH DAKOTA Metropolitan Statistical Area nan 425108   nan nan nan nan nan nan nan nan              399.00           69.377735
+             TENNESSEE Metropolitan Statistical Area nan 5208587   nan nan nan nan nan nan nan nan nan              651.50           42.427153
+             TENNESSEE Metropolitan Statistical Area nan 5297542   nan nan nan nan nan nan nan nan nan              623.70           45.394386
+                 TENNESSEE Metropolitan Statistical Area nan 5346297   nan nan nan nan nan nan nan nan              595.20           48.436333
+              TEXAS Metropolitan Statistical Area nan 25244087 nan nan nan nan nan nan nan nan nan nan              438.90           65.119009
+              TEXAS Metropolitan Statistical Area nan 25601190 nan nan nan nan nan nan nan nan nan nan              410.90           68.107589
+                  TEXAS Metropolitan Statistical Area nan 25893314 nan nan nan nan nan nan nan nan nan              418.90           67.253709
+                UTAH Metropolitan Statistical Area nan 2773185 nan nan nan nan nan nan nan nan nan nan              238.90           86.466005
+                UTAH Metropolitan Statistical Area nan 2830802 nan nan nan nan nan nan nan nan nan nan              233.10           87.085068
+                    UTAH Metropolitan Statistical Area nan 2871718 nan nan nan nan nan nan nan nan nan              235.60           86.818230
+              VERMONT Metropolitan Statistical Area nan 218089 nan nan nan nan nan nan nan nan nan nan              165.80           94.268332
+              VERMONT Metropolitan Statistical Area nan 220420 nan nan nan nan nan nan nan nan nan nan              172.00           93.606575
+                  VERMONT Metropolitan Statistical Area nan 221448 nan nan nan nan nan nan nan nan nan              202.20           90.383179
+            VIRGINIA Metropolitan Statistical Area nan 7428019 nan nan nan nan nan nan nan nan nan nan              208.20           89.742769
+            VIRGINIA Metropolitan Statistical Area nan 7466029 nan nan nan nan nan nan nan nan nan nan              200.00           90.617996
+                VIRGINIA Metropolitan Statistical Area nan 7489609 nan nan nan nan nan nan nan nan nan              208.00           89.764116
+          WASHINGTON Metropolitan Statistical Area nan 6668792 nan nan nan nan nan nan nan nan nan nan              304.50           79.464190
+          WASHINGTON Metropolitan Statistical Area nan 6769023 nan nan nan nan nan nan nan nan nan nan              311.50           78.717046
+              WASHINGTON Metropolitan Statistical Area nan 6838838 nan nan nan nan nan nan nan nan nan              293.90           80.595581
+       WEST VIRGINIA Metropolitan Statistical Area nan 1123324 nan nan nan nan nan nan nan nan nan nan              350.70           74.533034
+           WEST VIRGINIA Metropolitan Statistical Area nan 1156599 nan nan nan nan nan nan nan nan nan              316.60           78.172697
+       WEST VIRGINIA Metropolitan Statistical Area nan 1164452 nan nan nan nan nan nan nan nan nan nan              289.90           81.022521
+           WISCONSIN Metropolitan Statistical Area nan 4296895 nan nan nan nan nan nan nan nan nan nan              319.90           77.820472
+           WISCONSIN Metropolitan Statistical Area nan 4343699 nan nan nan nan nan nan nan nan nan nan              295.40           80.435479
+               WISCONSIN Metropolitan Statistical Area nan 4350936 nan nan nan nan nan nan nan nan nan              293.20           80.670296
+                  WYOMING Metropolitan Statistical Area nan 178138   nan nan nan nan   nan nan nan nan              237.50           86.615434
+                  WYOMING Metropolitan Statistical Area nan 178207   nan nan nan nan   nan nan nan nan              212.20           89.315829
+                      WYOMING Metropolitan Statistical Area nan 179210   nan nan nan nan   nan nan nan              217.40           88.760807
