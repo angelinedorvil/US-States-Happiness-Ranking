@@ -1,0 +1,57 @@
+                                       State  broadband_coverage  broadband_norm
+                                     Alabama            0.874269       86.145786
+                                      Alaska            0.795809       77.462382
+                                     Arizona            0.955059       95.087064
+                                    Arkansas            0.896421       88.597349
+                                  California            0.960786       95.720881
+                                    Colorado            0.958536       95.471850
+                                 Connecticut            0.976368       97.445333
+                                    Delaware            0.984760       98.374052
+                        District of Columbia            0.999451      100.000000
+                                     Florida            0.950564       94.589480
+                                     Georgia            0.944919       93.964785
+                                      Hawaii            0.959708       95.601504
+                                       Idaho            0.913418       90.478529
+                                    Illinois            0.967094       96.419004
+                                     Indiana            0.951954       94.743390
+                                        Iowa            0.955877       95.177549
+                                      Kansas            0.948947       94.410524
+                                    Kentucky            0.895080       88.448991
+                                   Louisiana            0.870185       85.693807
+                                       Maine            0.904527       89.494504
+                                    Maryland            0.984489       98.344155
+                               Massachusetts            0.990761       99.038279
+                                    Michigan            0.931176       92.443763
+                                   Minnesota            0.958161       95.430354
+                                 Mississippi            0.859757       84.539625
+                                    Missouri            0.938407       93.244049
+                                     Montana            0.818023       79.920797
+                                    Nebraska            0.950337       94.564362
+                                      Nevada            0.990010       98.955148
+                               New Hampshire            0.976234       97.430469
+                                  New Jersey            0.986548       98.571933
+                                  New Mexico            0.916813       90.854261
+                                    New York            0.972141       96.977544
+                              North Carolina            0.916970       90.871547
+                                North Dakota            0.995876       99.604372
+                                        Ohio            0.946923       94.186628
+                                    Oklahoma            0.922574       91.491787
+                                      Oregon            0.935397       92.910941
+                                Pennsylvania            0.960246       95.661111
+                                Rhode Island            0.967681       96.483891
+                              South Carolina            0.949709       94.494897
+                                South Dakota            0.948207       94.328648
+                                   Tennessee            0.955129       95.094741
+                                       Texas            0.955006       95.081123
+                                        Utah            0.969146       96.646086
+                                     Vermont            0.888341       87.703162
+                                    Virginia            0.919142       91.112026
+                                  Washington            0.932243       92.561916
+                               West Virginia            0.783663       76.118111
+                                   Wisconsin            0.883917       87.213571
+                                     Wyoming            0.910332       90.136950
+                              American Samoa            0.198688       11.377336
+                                        Guam            0.983738       98.260953
+Commonwealth of the Northern Mariana Islands            0.095887        0.000000
+                                 Puerto Rico            0.991900       99.164330
+                United States Virgin Islands            0.996843       99.711349

@@ -1,0 +1,55 @@
+               State  aqi_gooddays   aqi_norm
+             Alabama     71.643847  60.524986
+              Alaska     85.801617  85.929236
+             Arizona     61.490617  42.306354
+            Arkansas     68.848968  55.509943
+          California     60.643100  40.785595
+            Colorado     69.719198  57.071456
+         Connecticut     80.511836  76.437421
+   Country Of Mexico     37.913318   0.000000
+            Delaware     67.218376  52.584060
+District Of Columbia     64.970741  48.550976
+             Florida     74.318655  65.324575
+             Georgia     64.732105  48.122777
+              Hawaii     93.643243 100.000000
+               Idaho     75.088335  66.705664
+            Illinois     68.440667  54.777300
+             Indiana     73.910814  64.592759
+                Iowa     64.663836  48.000277
+              Kansas     73.347440  63.581857
+            Kentucky     78.494616  72.817786
+           Louisiana     70.389923  58.274984
+               Maine     87.843477  89.593085
+            Maryland     77.930750  71.806003
+       Massachusetts     81.848726  78.836294
+            Michigan     75.759018  67.909116
+           Minnesota     79.529023  74.673893
+         Mississippi     68.128211  54.216640
+            Missouri     76.441760  69.134208
+             Montana     81.182394  77.640650
+            Nebraska     80.759507  76.881834
+              Nevada     76.021969  68.380947
+       New Hampshire     86.244686  86.724265
+          New Jersey     79.939855  75.411077
+          New Mexico     76.955700  70.056405
+            New York     83.997537  82.692053
+      North Carolina     77.217430  70.526045
+        North Dakota     81.941247  79.002311
+                Ohio     72.727265  62.469036
+            Oklahoma     64.839340  48.315195
+              Oregon     72.861147  62.709269
+        Pennsylvania     73.060143  63.066341
+         Puerto Rico     87.826675  89.562935
+        Rhode Island     82.496806  79.999189
+      South Carolina     69.061959  55.892128
+        South Dakota     80.294466  76.047379
+           Tennessee     76.626405  69.465529
+               Texas     67.528745  53.140976
+                Utah     67.229613  52.604224
+             Vermont     85.112480  84.692670
+      Virgin Islands     82.902299  80.726792
+            Virginia     84.671118  83.900705
+          Washington     82.503058  80.010407
+       West Virginia     77.649367  71.301098
+           Wisconsin     79.574978  74.756354
+             Wyoming     83.836842  82.403706

@@ -1,0 +1,52 @@
+               State  food_low_access  food_norm
+             Alabama         0.226655  32.261177
+              Alaska         0.197605  42.794602
+             Arizona         0.169079  53.137772
+            Arkansas         0.249271  24.060930
+          California         0.066800  90.223184
+            Colorado         0.139291  63.938399
+         Connecticut         0.078502  85.979867
+            Delaware         0.149533  60.225032
+District of Columbia         0.067039  90.136342
+             Florida         0.131516  66.757693
+             Georgia         0.225345  32.736326
+              Hawaii         0.099688  78.298026
+               Idaho         0.137584  64.557547
+            Illinois         0.102408  77.312062
+             Indiana         0.193099  44.428401
+                Iowa         0.103281  76.995530
+              Kansas         0.181462  48.647757
+            Kentucky         0.137838  64.465469
+           Louisiana         0.228521  31.584778
+               Maine         0.085470  83.453464
+            Maryland         0.094245  80.271916
+       Massachusetts         0.076346  86.761658
+            Michigan         0.123004  69.843934
+           Minnesota         0.143928  62.257227
+         Mississippi         0.315630   0.000000
+            Missouri         0.178289  49.798304
+             Montana         0.132841  66.277151
+            Nebraska         0.103383  76.958264
+              Nevada         0.072059  88.316246
+       New Hampshire         0.130137  67.257717
+          New Jersey         0.053946  94.883745
+          New Mexico         0.253012  22.704515
+            New York         0.039836 100.000000
+      North Carolina         0.162299  55.596164
+        North Dakota         0.082927  84.375622
+                Ohio         0.143051  62.575120
+            Oklahoma         0.169216  53.088056
+              Oregon         0.121065  70.546987
+        Pennsylvania         0.074143  87.560436
+        Rhode Island         0.053942  94.885248
+      South Carolina         0.199817  41.992594
+        South Dakota         0.144144  62.178869
+           Tennessee         0.178643  49.669808
+               Texas         0.195113  43.698231
+                Utah         0.083761  84.073275
+             Vermont         0.065574  90.667658
+            Virginia         0.142630  62.727916
+          Washington         0.120415  70.782725
+       West Virginia         0.136364  64.999999
+           Wisconsin         0.095546  79.800052
+             Wyoming         0.091603  81.229714

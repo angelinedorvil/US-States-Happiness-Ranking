@@ -20,7 +20,15 @@ def process_pm25(path="data/target_data/PM2.5_highest_annual_average_concentrati
           .rename(columns={"Value": "pm25_avg"})
     )
     df["pm25_norm"] = normalize(df["pm25_avg"], reverse=True)  # lower = better
-    print("PM2.5 Data Processed:", df.head())
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_air_pollution_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df.to_string(index=False))
+
+    print("PM2.5 Data Processed")
     return df
 
 # Process air quality index data
@@ -43,7 +51,15 @@ def process_aqi(
               .rename(columns={"percent_good": "aqi_gooddays"})
     )
     df_state["aqi_norm"] = normalize(df_state["aqi_gooddays"], reverse=False)  # higher = better'
-    print("AQI Data Processed:", df_state.head())
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_aqi_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_state.to_string(index=False))
+
+    print("AQI Data Processed")
     return df_state
 
 # Process traffic fatality data
@@ -62,7 +78,15 @@ def process_traffic_fatalities(
     df_state = df_all.groupby("STATENAME", as_index=False)["PERSONS"].sum()
     df_state.rename(columns={"STATENAME": "State", "PERSONS": "fatalities"}, inplace=True)
     df_state["fatalities_norm"] = normalize(df_state["fatalities"], reverse=True)
-    print("Traffic Fatalities Data Processed:", df_state.head())
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_traffic_fatalities_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_state.to_string(index=False))
+
+    print("Traffic Fatalities Data Processed")
     return df_state
 
 # Process violent crime data
@@ -82,9 +106,9 @@ def process_violent_crime():
     if not files:
         raise FileNotFoundError(f"No FBI crime CSV files found in {folder}")
 
-    print(f"📂 Found {len(files)} FBI crime CSV file(s):")
-    for f in files:
-        print("   •", os.path.basename(f))
+    # print(f"📂 Found {len(files)} FBI crime CSV file(s):")
+    # for f in files:
+    #     print("   •", os.path.basename(f))
 
     # === Define weights (equal by default; editable later) ===
     weights = {
@@ -124,7 +148,14 @@ def process_violent_crime():
     # === Normalize (lower = better) ===
     df_avg["crime_norm"] = normalize(df_avg["crime_composite"], reverse=True)
 
-    print("Violent Crime Data Processed:", df_avg[["State", "crime_composite", "crime_norm"]].head())
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_violent_crime_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_avg[["State", "crime_composite", "crime_norm"]].to_string(index=False))
+
+    print("Violent Crime Data Processed")
     return df_avg
 
 # Process hate crime data
@@ -134,7 +165,15 @@ def process_hate_crime(path="data/target_data/hate_crime.csv"):
     df_state = df.groupby("state_name", as_index=False)["incident_id"].count()
     df_state.rename(columns={"state_name": "State", "incident_id": "hate_crime_count"}, inplace=True)
     df_state["hate_crime_norm"] = normalize(df_state["hate_crime_count"], reverse=True)
-    print("Hate Crime Data Processed:", df_state.head())
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_hate_crime_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_state.to_string(index=False))
+
+    print("Hate Crime Data Processed")
     return df_state
 
 # Process drinking water violations data
@@ -166,7 +205,14 @@ def process_drinking_water(path="data/target_data/SDWA_PN_VIOLATION_ASSOC.csv"):
     # Normalize (lower = better)
     df_state["water_norm"] = normalize(df_state["water_violations"], reverse=True)
 
-    print("Drinking Water Violations Processed:", df_state.to_string(index=False))
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_drinking_water_violations_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_state.to_string(index=False))
+
+    print("Drinking Water Violations Processed")
     return df_state
 
 # Process natural hazard data
@@ -203,7 +249,14 @@ def process_natural_hazard(
     # Normalize (lower = better)
     df_avg["hazard_norm"] = normalize(df_avg["hazard_score"], reverse=True)
 
-    print("Natural Hazard Risk Data Processed:", df_avg.to_string(index=False))
+    # Save to file
+    results_dir = "results" 
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_natural_hazard_risk_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_avg.to_string(index=False))
+
+    print("Natural Hazard Risk Data Processed")
     return df_avg
 
 # Process broadband access data
@@ -211,7 +264,15 @@ def process_broadband(path="data/target_data/bdc_comparison_fixed_state_total_al
     df = pd.read_csv(path)
     df = df.rename(columns={"geography_desc_full": "State", "percent_coverage": "broadband_coverage"})
     df["broadband_norm"] = normalize(df["broadband_coverage"], reverse=False)
-    print("Broadband Access Data Processed:", df.to_string(index=False))
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_broadband_access_by_state.txt")   
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df[["State", "broadband_coverage", "broadband_norm"]].to_string(index=False))
+
+    print("Broadband Access Data Processed")
     return df[["State", "broadband_coverage", "broadband_norm"]]
 
 # Process food insecurity data
@@ -223,7 +284,15 @@ def process_food_access(path="data/target_data/FoodAccessResearchAtlasData2019.c
           .rename(columns={"LILATracts_1And10": "food_low_access"})
     )
     df_state["food_norm"] = normalize(df_state["food_low_access"], reverse=True)
-    print("Food Insecurity Data Processed:", df_state.to_string(index=False))
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_food_insecurity_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_state.to_string(index=False))
+
+    print("Food Insecurity Data Processed")
     return df_state
 
 # Process park data
@@ -233,7 +302,15 @@ def process_parks(path="data/target_data/analytic_data2025_v2.csv"):
     df_state = df.groupby("state", as_index=False)["v179_rawvalue"].mean()
     df_state.rename(columns={"state": "State", "v179_rawvalue": "parks_access"}, inplace=True)
     df_state["parks_norm"] = normalize(df_state["parks_access"], reverse=False)
-    print("Parks Access Data Processed:", df_state.to_string(index=False))
+
+    # Save to file
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    out_txt = os.path.join(results_dir, "norm_parks_access_by_state.txt")
+    with open(out_txt, "w", encoding="utf-8") as f:
+        f.write(df_state.to_string(index=False))
+
+    print("Parks Access Data Processed")
     return df_state
 
 # Combine datasets
