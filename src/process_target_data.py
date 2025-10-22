@@ -180,29 +180,37 @@ def process_hate_crime(path="data/target_data/hate_crime.csv"):
 def process_drinking_water(path="data/target_data/SDWA_PN_VIOLATION_ASSOC.csv"):
     """
     Processes Safe Drinking Water Act (SDWA) violation data.
-    Uses the first two letters of PWSID as the state code.
-    Counts number of unique PN_VIOLATION_ID per state since 2023.
+    Extracts state abbreviation from PWSID.
+    Excludes EPA region codes (tribal/non-state systems).
+    Counts unique violations per state since 2023.
     """
 
-    df = pd.read_csv(path)
-
-    # Extract state code from PWSID (first two letters)
+    df = pd.read_csv(path, dtype=str)
+    df["PWSID"] = df["PWSID"].str.strip().str.upper()
     df["State"] = df["PWSID"].str[:2]
 
-    # Filter to valid reported violations
+    # --- Filter to valid US state abbreviations ---
+    valid_states = {
+        "AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
+        "KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM",
+        "NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA",
+        "WV","WI","WY"
+    }
+    df = df[df["State"].isin(valid_states)]
+
+    # --- Filter valid reported violations ---
     df = df[df["LAST_REPORTED_DATE"].notna()]
-
-    # Extract year from LAST_REPORTED_DATE
     df["year"] = df["LAST_REPORTED_DATE"].str.extract(r"(\d{4})").astype(float)
-
-    # Keep recent data (2023+)
     df = df[df["year"] >= 2023]
 
-    # Count unique violations per state
-    df_state = df.groupby("State", as_index=False)["PN_VIOLATION_ID"].nunique()
-    df_state.rename(columns={"PN_VIOLATION_ID": "water_violations"}, inplace=True)
+    # --- Aggregate per state ---
+    df_state = (
+        df.groupby("State", as_index=False)["PN_VIOLATION_ID"]
+          .nunique()
+          .rename(columns={"PN_VIOLATION_ID": "water_violations"})
+    )
 
-    # Normalize (lower = better)
+    # --- Normalize (lower = better) ---
     df_state["water_norm"] = normalize(df_state["water_violations"], reverse=True)
 
     # Save to file
@@ -213,6 +221,7 @@ def process_drinking_water(path="data/target_data/SDWA_PN_VIOLATION_ASSOC.csv"):
         f.write(df_state.to_string(index=False))
 
     print("Drinking Water Violations Processed")
+
     return df_state
 
 # Process natural hazard data
@@ -297,10 +306,26 @@ def process_food_access(path="data/target_data/FoodAccessResearchAtlasData2019.c
 
 # Process park data
 def process_parks(path="data/target_data/analytic_data2025_v2.csv"):
+    """
+    Aggregates Access to Parks (v179_rawvalue) to the state level
+    using a population-weighted average.
+    Higher = better.
+    """
+
     df = pd.read_csv(path)
     df = df[df["state"] != "US"]
-    df_state = df.groupby("state", as_index=False)["v179_rawvalue"].mean()
-    df_state.rename(columns={"state": "State", "v179_rawvalue": "parks_access"}, inplace=True)
+
+    # Compute weighted mean by state
+    df["weighted_value"] = df["v179_rawvalue"] * df["v179_denominator"]
+    df_state = (
+        df.groupby("state", as_index=False)
+          .apply(lambda g: pd.Series({
+              "parks_access": g["weighted_value"].sum() / g["v179_denominator"].sum()
+          }))
+          .reset_index(drop=True)
+    )
+
+    df_state.rename(columns={"state": "State"}, inplace=True)
     df_state["parks_norm"] = normalize(df_state["parks_access"], reverse=False)
 
     # Save to file
@@ -310,7 +335,7 @@ def process_parks(path="data/target_data/analytic_data2025_v2.csv"):
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
-    print("Parks Access Data Processed")
+    print("Parks Access Data Processed (population-weighted)")
     return df_state
 
 # Combine datasets

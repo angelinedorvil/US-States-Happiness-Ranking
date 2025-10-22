@@ -1,60 +1,52 @@
                                        State  env_safety_index
-                                          01          9.090909
-                                          02          9.087515
-                                          05          9.066021
-                                          06          9.089778
-                                          07          9.075637
-                                          09          8.602765
-                                          10          9.046789
-                                          AK         12.266531
-                                          AL          9.042830
+                                          AK         12.698431
+                                          AL          9.836762
                                      ALABAMA          6.431020
                                       ALASKA          3.666810
-                                          AR          9.089922
+                                          AR          9.244597
                                      ARIZONA          7.029076
                                     ARKANSAS          5.824582
-                                          AS          9.051315
-                                          AZ         10.516132
+                                          AZ         12.303905
                                      Alabama         41.570000
                                       Alaska         52.495303
                               American Samoa          1.034303
                                      Arizona         42.770295
                                     Arkansas         41.465191
-                                          CA         14.334166
+                                          CA         16.261940
                                   CALIFORNIA          7.978997
-                                          CO         12.136422
+                                          CO         14.623901
                                     COLORADO          7.523001
                                  CONNECTICUT         11.296191
-                                          CT         13.436531
+                                          CT         14.045709
                                   California         24.950931
                                     Colorado         53.140976
 Commonwealth of the Northern Mariana Islands          0.000000
                                  Connecticut         53.539801
                            Country Of Mexico          0.000000
-                                          DC         18.180687
-                                          DE         12.225258
+                                          DC         18.181818
+                                          DE         13.550086
                                     DELAWARE          8.237286
                         DISTRICT OF COLUMBIA          0.000000
                                     Delaware         46.809057
                         District Of Columbia          4.413725
                         District of Columbia         43.052960
-                                          FL         10.754851
+                                          FL         12.150471
                                      FLORIDA          8.489360
                                      Federal          8.664352
                                      Florida         39.359324
-                                          GA          9.676616
+                                          GA         10.888535
                                      GEORGIA          7.772438
                                      Georgia         41.288147
                                         Guam         18.023723
                                       HAWAII          7.558293
-                                          HI          5.486056
+                                          HI          6.179131
                                       Hawaii         58.375836
-                                          IA         10.196275
-                                          ID         10.075509
+                                          IA         11.407128
+                                          ID         10.862161
                                        IDAHO         11.392927
-                                          IL         10.664705
+                                          IL         14.785240
                                     ILLINOIS          9.541626
-                                          IN         10.738730
+                                          IN         11.929721
                                      INDIANA          8.818609
                                         IOWA         10.335956
                                        Idaho         53.941689
@@ -63,30 +55,29 @@ Commonwealth of the Northern Mariana Islands          0.000000
                                         Iowa         51.554833
                                       KANSAS          7.386516
                                     KENTUCKY         10.171389
-                                          KS          9.095459
-                                          KY         10.006319
+                                          KS         11.459442
+                                          KY         11.099739
                                       Kansas         50.243635
                                     Kentucky         50.490941
-                                          LA          8.631119
+                                          LA         10.218654
                                    LOUISIANA          5.025566
                                    Louisiana         40.881842
-                                          MA         14.091347
+                                          MA         15.025327
                                        MAINE         12.384025
                                     MARYLAND          8.870858
                                MASSACHUSETTS         11.633682
-                                          MD         12.035767
-                                          ME          8.215596
-                                          MI         10.857683
+                                          MD         14.906075
+                                          ME          8.981195
+                                          MI         12.851032
                                     MICHIGAN         10.059352
                                    MINNESOTA          9.959735
                                  MISSISSIPPI          8.400672
                                     MISSOURI          6.873314
-                                          MN         10.471660
-                                          MO          8.981719
+                                          MN         14.275492
+                                          MO         11.407246
                                      MONTANA          8.084519
-                                          MP          9.068284
-                                          MS          9.072345
-                                          MT          9.814324
+                                          MS          9.402025
+                                          MT         10.991983
                                        Maine         58.215711
                                     Maryland         51.929000
                                Massachusetts         52.763614
@@ -95,23 +86,22 @@ Commonwealth of the Northern Mariana Islands          0.000000
                                  Mississippi         37.668496
                                     Missouri         46.902752
                                      Montana         57.451267
-                                          NC         10.707442
-                                          ND          9.098831
-                                          NE         10.387674
+                                          NC         11.199653
+                                          ND          9.087515
+                                          NE         13.498022
                                     NEBRASKA          9.441161
                                       NEVADA          7.348777
                                NEW HAMPSHIRE         12.333571
                                   NEW JERSEY         11.808740
                                   NEW MEXICO          3.027004
                                     NEW YORK         11.144600
-                                          NH         10.109801
-                                          NJ         14.025258
-                                          NM          9.137815
-                                          NN          8.930268
+                                          NH         10.797367
+                                          NJ         14.972008
+                                          NM         10.850635
                               NORTH CAROLINA          8.064218
                                 NORTH DAKOTA          9.663187
-                                          NV         11.412794
-                                          NY         12.197451
+                                          NV         14.195974
+                                          NY         14.263412
                                     Nebraska         57.647361
                                       Nevada         54.410434
                                New Hampshire         57.160412
@@ -121,55 +111,53 @@ Commonwealth of the Northern Mariana Islands          0.000000
                               North Carolina         45.353272
                                 North Dakota         61.247185
                     Northern Mariana Islands          0.000000
-                                          OH         10.272878
+                                          OH         12.151731
                                         OHIO          9.130528
-                                          OK          9.042964
+                                          OK         11.047636
                                     OKLAHOMA          6.681113
-                                          OR         12.190196
+                                          OR         14.929219
                                       OREGON          7.297218
                                         Ohio         46.588674
                                     Oklahoma         45.064183
                                       Oregon         44.571238
-                                          PA          1.572553
+                                          PA          2.971692
                                 PENNSYLVANIA         11.138852
-                                          PR          9.070546
                                  PUERTO RICO         13.636364
                                 Pennsylvania         51.203020
                                  Puerto Rico         17.157024
                                 RHODE ISLAND         11.166034
-                                          RI         12.709594
+                                          RI         13.866488
                                 Rhode Island         58.587250
-                                          SC          9.700641
-                                          SD         10.042550
+                                          SC         10.254650
+                                          SD         11.578709
                               SOUTH CAROLINA          5.800857
                                 SOUTH DAKOTA          9.962968
                               South Carolina         43.077052
                                 South Dakota         57.279608
                                    TENNESSEE          5.896755
                                        TEXAS          7.989540
-                                          TN          9.598450
-                                          TX          5.734097
+                                          TN         10.764391
+                                          TX          8.078383
                                    Tennessee         47.896534
                                        Texas         35.706521
-                                          UT         11.799554
+                                          UT         13.793542
                                         UTAH          8.742101
                 United States Virgin Islands          9.064668
                                         Utah         56.085604
-                                          VA         10.883507
+                                          VA         12.469436
                                      VERMONT         12.283155
-                                          VI          9.086384
                                     VIRGINIA         11.167572
-                                          VT          9.974633
+                                          VT         10.562329
                                      Vermont         61.319810
                               Virgin Islands          7.338799
                                     Virginia         52.868899
-                                          WA          2.615510
+                                          WA          4.857436
                                   WASHINGTON          6.948817
                                WEST VIRGINIA         10.910045
-                                          WI         11.136002
+                                          WI         13.505236
                                    WISCONSIN         10.807056
-                                          WV          5.254847
-                                          WY          2.356055
+                                          WV          4.931611
+                                          WY          3.448860
                                      WYOMING         10.788127
                                   Washington         47.027009
                                West Virginia         53.704206
