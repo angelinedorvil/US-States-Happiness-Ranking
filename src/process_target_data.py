@@ -2,43 +2,71 @@ import pandas as pd
 import numpy as np
 import os
 import glob
+from utils.metrics_utils import process_chr_metric, normalize
 
+# Years of data to consider
+YEARS = range(2015, 2026)  # 2015–2025 inclusive
 
-# Optional normalization helper
-def normalize(series, reverse=False):
-    norm = (series - series.min()) / (series.max() - series.min())
-    if reverse:
-        norm = 1 - norm
-    return norm * 100
-
-# --- State abbreviation ↔ full name mappings ---
-STATE_MAP = {
-    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
-    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
-    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
-    "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
-    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
-    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
-    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
-    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
-    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
-    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
-    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
-    "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia"
+# === Target metrics from County Health Rankings ===
+TARGET_METRICS = {
+    # Health outcomes
+    "v001_rawvalue": True,   # Premature death (lower is better)
+    "v127_rawvalue": True,   # Premature age-adjusted mortality (lower is better)
+    "v128_rawvalue": True,   # Child mortality (lower is better)
+    "v129_rawvalue": True,   # Infant mortality (lower is better)
+    "v135_rawvalue": True,   # Injury deaths (lower is better)
+    "v161_rawvalue": True,   # Suicides (lower is better)
+    "v015_rawvalue": True,   # Homicides (lower is better)
+    "v039_rawvalue": True,   # Motor vehicle crash deaths (lower is better)
+    "v148_rawvalue": True,   # Firearm fatalities (lower is better)
+    
+    # Environmental / infrastructure factors
+    "v125_rawvalue": True,   # Air pollution (PM2.5) (lower is better)
+    "v124_rawvalue": True,   # Drinking water violations (lower is better)
+    "v179_rawvalue": False,  # Access to parks (higher is better)
+    "v182_rawvalue": True,   # Adverse climate events (lower is better)
+    "v166_rawvalue": False,  # Broadband access (higher is better)
+    "v181_rawvalue": False,  # Library access (higher is better)
+    "v156_rawvalue": True,   # Traffic volume (lower is better)
+    
+    # Behavioral / social outcomes
+    "v134_rawvalue": True,   # Alcohol-impaired driving deaths (lower is better)
+    "v139_rawvalue": True,   # Food insecurity (lower is better)
+    "v083_rawvalue": True,   # Limited access to healthy foods (lower is better)
+    "v133_rawvalue": False,  # Food environment index (higher is better)
+    "v155_rawvalue": False,  # Flu vaccination (higher is better)
 }
 
-# Standardize state names function
-def standardize_state_names(df):
-    """
-    Ensures that state names are standardized to full names.
-    Works whether states are provided as abbreviations or full names.
-    """
-    df = df.copy()
-    df["State"] = df["State"].str.strip()
-    df["State"] = df["State"].replace(STATE_MAP)  # Convert abbreviations to full names
-    df["State"] = df["State"].str.title()  # Capitalize properly (Alabama, not ALABAMA)
-    return df
+# === Target metric weights (editable later) ===
+TARGET_METRIC_WEIGHTS = {
+    # Health outcomes
+    "v001_rawvalue": 1.0,   # Premature death
+    "v127_rawvalue": 1.0,   # Premature age-adjusted mortality
+    "v128_rawvalue": 1.0,   # Child mortality
+    "v129_rawvalue": 1.0,   # Infant mortality
+    "v135_rawvalue": 1.0,   # Injury deaths
+    "v161_rawvalue": 1.0,   # Suicides
+    "v015_rawvalue": 1.0,   # Homicides
+    "v039_rawvalue": 1.0,   # Motor vehicle crash deaths
+    "v148_rawvalue": 1.0,   # Firearm fatalities
+
+    # Environmental / infrastructure
+    "v125_rawvalue": 1.0,   # Air pollution (PM2.5)
+    "v124_rawvalue": 1.0,   # Drinking water violations
+    "v179_rawvalue": 1.0,   # Access to parks
+    "v182_rawvalue": 1.0,   # Adverse climate events
+    "v166_rawvalue": 1.0,   # Broadband access
+    "v181_rawvalue": 1.0,   # Library access
+    "v156_rawvalue": 1.0,   # Traffic volume
+
+    # Behavioral / social outcomes
+    "v134_rawvalue": 1.0,   # Alcohol-impaired driving deaths
+    "v139_rawvalue": 1.0,   # Food insecurity
+    "v083_rawvalue": 1.0,   # Limited access to healthy foods
+    "v133_rawvalue": 1.0,   # Food environment index
+    "v155_rawvalue": 1.0,   # Flu vaccination
+}
+
 
 # Classify states based on happiness index
 def classify_percentiles(df, column="env_safety_index", n_classes=5):
@@ -51,157 +79,10 @@ def classify_percentiles(df, column="env_safety_index", n_classes=5):
     df["Percentile_Class"] = pd.qcut(df[column], q=n_classes, labels=labels)
     return df
 
-# Process air pollution data
-def process_pm25(path="data/target_data/PM2.5_highest_annual_average_concentration_states_2018_to_2020.csv"):
-    df = pd.read_csv(path)
-    df = (
-        df.groupby("State", as_index=False)["Value"]
-          .mean()
-          .rename(columns={"Value": "pm25_avg"})
-    )
-    df["pm25_norm"] = normalize(df["pm25_avg"], reverse=True)  # lower = better
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_air_pollution_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df.to_string(index=False))
-
-    print("PM2.5 Data Processed")
-    return df
-
-# Process air quality index data
-def process_aqi(
-    paths=[
-        "data/target_data/annual_aqi_by_county_2023.csv",
-        "data/target_data/annual_aqi_by_county_2024.csv",
-        "data/target_data/annual_aqi_by_county_2025.csv"
-    ]
-):
-    frames = []
-    for p in paths:
-        df = pd.read_csv(p)
-        df["percent_good"] = (df["Good Days"] / df["Days with AQI"]) * 100
-        frames.append(df)
-    df_all = pd.concat(frames, ignore_index=True)
-    df_state = (
-        df_all.groupby("State", as_index=False)["percent_good"]
-              .mean()
-              .rename(columns={"percent_good": "aqi_gooddays"})
-    )
-    df_state["aqi_norm"] = normalize(df_state["aqi_gooddays"], reverse=False)  # higher = better'
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_aqi_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df_state.to_string(index=False))
-
-    print("AQI Data Processed")
-    return df_state
-
-# Process traffic fatality data
-def process_traffic_fatalities(
-    paths=[
-        "data/target_data/accident_2020.csv",
-        "data/target_data/accident_2021.csv",
-        "data/target_data/accident_2022.csv"
-    ]
-):
-    frames = []
-    for p in paths:
-        df = pd.read_csv(p, encoding="latin1")
-        frames.append(df[["STATENAME", "PERSONS"]])
-    df_all = pd.concat(frames, ignore_index=True)
-    df_state = df_all.groupby("STATENAME", as_index=False)["PERSONS"].sum()
-    df_state.rename(columns={"STATENAME": "State", "PERSONS": "fatalities"}, inplace=True)
-    df_state["fatalities_norm"] = normalize(df_state["fatalities"], reverse=True)
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_traffic_fatalities_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df_state.to_string(index=False))
-
-    print("Traffic Fatalities Data Processed")
-    return df_state
-
-# Process violent crime data
-def process_violent_crime():
-    """
-    Processes all cleaned FBI crime CSVs from:
-        data/target_data/Table_5_Crime_in_the_United_States_by_State_*.csv
-
-    Combines all years, computes weighted composite score (equal weights by default),
-    and normalizes it so that lower = better.
-    """
-
-    folder = os.path.join("data", "target_data")
-    pattern = os.path.join(folder, "Table_5_Crime_in_the_United_States_by_State_*.csv")
-    files = sorted(glob.glob(pattern))
-
-    if not files:
-        raise FileNotFoundError(f"No FBI crime CSV files found in {folder}")
-
-    # print(f"📂 Found {len(files)} FBI crime CSV file(s):")
-    # for f in files:
-    #     print("   •", os.path.basename(f))
-
-    # === Define weights (equal by default; editable later) ===
-    weights = {
-        "Violent_crime": 1.0,
-        "Murder": 1.0,
-        "Rape": 1.0,
-        "Robbery": 1.0,
-        "Aggravated_assault": 1.0,
-        "Property_crime": 1.0,
-        "Burglary": 1.0,
-        "Larceny_theft": 1.0,
-        "Motor_vehicle_theft": 1.0,
-    }
-    total = sum(weights.values())
-    weights = {k: v / total for k, v in weights.items()}
-
-    # === Read and clean all files ===
-    frames = []
-    for p in files:
-        df = pd.read_csv(p, quotechar='"', thousands=',')
-        keep_cols = ["State"] + list(weights.keys())
-        df = df[keep_cols].copy()
-
-        # clean numbers
-        for col in weights.keys():
-            df[col] = df[col].astype(str).str.replace(",", "", regex=False).astype(float)
-
-        frames.append(df)
-
-    # === Combine across years ===
-    combined = pd.concat(frames, ignore_index=True)
-    df_avg = combined.groupby("State", as_index=False).mean(numeric_only=True)
-
-    # === Compute weighted composite ===
-    df_avg["crime_composite"] = sum(df_avg[col] * w for col, w in weights.items())
-
-    # === Normalize (lower = better) ===
-    df_avg["crime_norm"] = normalize(df_avg["crime_composite"], reverse=True)
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_violent_crime_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df_avg[["State", "crime_composite", "crime_norm"]].to_string(index=False))
-
-    print("Violent Crime Data Processed")
-    return df_avg
-
 # Process hate crime data
-def process_hate_crime(path="data/target_data/hate_crime.csv"):
+def process_hate_crime(path="data/hate_crime.csv"):
     df = pd.read_csv(path)
-    df = df[df["data_year"] >= 2022]
+    df = df[df["data_year"] >= 2015]
     df_state = df.groupby("state_name", as_index=False)["incident_id"].count()
     df_state.rename(columns={"state_name": "State", "incident_id": "hate_crime_count"}, inplace=True)
     df_state["hate_crime_norm"] = normalize(df_state["hate_crime_count"], reverse=True)
@@ -216,254 +97,94 @@ def process_hate_crime(path="data/target_data/hate_crime.csv"):
     print("Hate Crime Data Processed")
     return df_state
 
-# Process drinking water violations data
-def process_drinking_water(path="data/target_data/SDWA_PN_VIOLATION_ASSOC.csv"):
+# Process all target metrics across years
+def process_target_metrics_all_years(data_dir="data"):
     """
-    Processes Safe Drinking Water Act (SDWA) violation data.
-    Extracts state abbreviation from PWSID.
-    Excludes EPA region codes (tribal/non-state systems).
-    Counts unique violations per state since 2023.
+    Loops over all analytic_data_YEAR.csv files (2015–2025),
+    computes weighted state averages for all TARGET_METRICS,
+    and aggregates by state across years.
     """
+    yearly_results = []
 
-    df = pd.read_csv(path, dtype=str)
-    df["PWSID"] = df["PWSID"].str.strip().str.upper()
-    df["State"] = df["PWSID"].str[:2]
+    for year in YEARS:
+        file_path = os.path.join(data_dir, f"analytic_data{year}.csv")
+        if not os.path.exists(file_path):
+            print(f"Missing file for {year}, skipping.")
+            continue
 
-    # --- Filter to valid US state abbreviations ---
-    valid_states = {
-        "AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
-        "KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM",
-        "NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA",
-        "WV","WI","WY"
-    }
-    df = df[df["State"].isin(valid_states)]
+        df = pd.read_csv(file_path)
+        df = df[df["state"] != "US"]
 
-    # --- Filter valid reported violations ---
-    df = df[df["LAST_REPORTED_DATE"].notna()]
-    df["year"] = df["LAST_REPORTED_DATE"].str.extract(r"(\d{4})").astype(float)
-    df = df[df["year"] >= 2023]
+        state_year = pd.DataFrame({"state": df["state"].unique()})
+        for var, reverse in TARGET_METRICS.items():
+            if var not in df.columns:
+                print(f"{var} not found in {year}, skipping.")
+                continue
+            metric_df = process_chr_metric(df, var, reverse=reverse)
+            state_year = state_year.merge(metric_df, on="state", how="left")
 
-    # --- Aggregate per state ---
+        state_year["year"] = year
+        yearly_results.append(state_year)
+
+    # === Combine all years ===
+    df_all = pd.concat(yearly_results, ignore_index=True)
+
+    # Average each normalized metric by state
+    agg_cols = [c for c in df_all.columns if c.endswith("_norm")]
     df_state = (
-        df.groupby("State", as_index=False)["PN_VIOLATION_ID"]
-          .nunique()
-          .rename(columns={"PN_VIOLATION_ID": "water_violations"})
+        df_all.groupby("state")[agg_cols]
+        .mean()
+        .reset_index()
     )
-
-    # --- Normalize (lower = better) ---
-    df_state["water_norm"] = normalize(df_state["water_violations"], reverse=True)
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_drinking_water_violations_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df_state.to_string(index=False))
-
-    print("Drinking Water Violations Processed")
-
-    return df_state
-
-# Process natural hazard data
-def process_natural_hazard(
-    paths=[
-        "data/target_data/NRI_Table_Counties_2020.csv",
-        "data/target_data/NRI_Table_Counties_2021.csv",
-        "data/target_data/NRI_Table_Counties_2023.csv"
-    ]
-):
-    """
-    Processes FEMA National Risk Index (NRI) data across multiple years.
-    - Computes average RISK_SCORE per state across available datasets.
-    - If a state appears only in some years (e.g., territories), uses available data.
-    - Lower RISK_SCORE = better (normalized reversed).
-    """
-
-    frames = []
-
-    for p in paths:
-        df = pd.read_csv(p)
-        # Average within file by state
-        df_state = (
-            df.groupby("STATE", as_index=False)["RISK_SCORE"]
-              .mean()
-              .rename(columns={"STATE": "State", "RISK_SCORE": "hazard_score"})
-        )
-        frames.append(df_state)
-
-    # Combine and average across available years
-    df_all = pd.concat(frames, ignore_index=True)
-    df_avg = df_all.groupby("State", as_index=False)["hazard_score"].mean()  # ✅ default skipna=True
-
-    # Normalize (lower = better)
-    df_avg["hazard_norm"] = normalize(df_avg["hazard_score"], reverse=True)
-
-    # Save to file
-    results_dir = "results/norm_targets" 
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_natural_hazard_risk_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df_avg.to_string(index=False))
-
-    print("Natural Hazard Risk Data Processed")
-    return df_avg
-
-# Process broadband access data
-def process_broadband(path="data/target_data/bdc_comparison_fixed_state_total_all_terrestrial_r_100_20_D24.csv"):
-    df = pd.read_csv(path)
-    df = df.rename(columns={"geography_desc_full": "State", "percent_coverage": "broadband_coverage"})
-    df["broadband_norm"] = normalize(df["broadband_coverage"], reverse=False)
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_broadband_access_by_state.txt")   
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df[["State", "broadband_coverage", "broadband_norm"]].to_string(index=False))
-
-    print("Broadband Access Data Processed")
-    return df[["State", "broadband_coverage", "broadband_norm"]]
-
-# Process food insecurity data
-def process_food_access(path="data/target_data/FoodAccessResearchAtlasData2019.csv"):
-    df = pd.read_csv(path)
-    df_state = (
-        df.groupby("State", as_index=False)["LILATracts_1And10"]
-          .mean()
-          .rename(columns={"LILATracts_1And10": "food_low_access"})
-    )
-    df_state["food_norm"] = normalize(df_state["food_low_access"], reverse=True)
-
-    # Save to file
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_food_insecurity_by_state.txt")
-    with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df_state.to_string(index=False))
-
-    print("Food Insecurity Data Processed")
-    return df_state
-
-# Process park data
-def process_parks(path="data/target_data/analytic_data2025_v2.csv"):
-    """
-    Aggregates Access to Parks (v179_rawvalue) to the state level
-    using a population-weighted average.
-    Higher = better.
-    """
-
-    df = pd.read_csv(path)
-    df = df[df["state"] != "US"]
-
-    # Compute weighted mean by state
-    df["weighted_value"] = df["v179_rawvalue"] * df["v179_denominator"]
-    df_state = (
-        df.groupby("state", as_index=False)
-          .apply(lambda g: pd.Series({
-              "parks_access": g["weighted_value"].sum() / g["v179_denominator"].sum()
-          }))
-          .reset_index(drop=True)
-    )
-
     df_state.rename(columns={"state": "State"}, inplace=True)
-    df_state["parks_norm"] = normalize(df_state["parks_access"], reverse=False)
 
-    # Save to file
     results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
-    out_txt = os.path.join(results_dir, "norm_parks_access_by_state.txt")
+    out_txt = os.path.join(results_dir, "norm_target_metrics_by_state_all_years.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
-    print("Parks Access Data Processed (population-weighted)")
     return df_state
 
 # Combine datasets
 def build_target_index():
     """
-    Combines all processed target datasets (environment & safety metrics)
+    Combines all CHR target metrics (2015–2025) and hate crime
     into one weighted composite index by state.
-
-    You can edit the weights dictionary below to rebalance contributions.
-    All weights automatically normalize to sum = 1.
     """
+    chr_df = process_target_metrics_all_years()
+    hate_df = process_hate_crime()
 
-    # === Step 1: collect all processed dataframes ===
-    dfs = {
-        "pm25": process_pm25(),
-        "aqi": process_aqi(),
-        "traffic": process_traffic_fatalities(),
-        "crime": process_violent_crime(),
-        "hate": process_hate_crime(),
-        "water": process_drinking_water(),
-        "hazard": process_natural_hazard(),
-        "broadband": process_broadband(),
-        "food": process_food_access(),
-        "parks": process_parks(),
-    }
+    # === Merge ===
+    merged = chr_df.merge(hate_df, on="State", how="left")
 
-    # === Step 2: merge all dataframes on 'State' ===
-    merged = None
-    for name, df in dfs.items():
-        df = standardize_state_names(df)
-        dfs[name] = df
-        if merged is None:
-            merged = df
-        else:
-            merged = merged.merge(df, on="State", how="outer")
+    # === Normalize weights ===
+    total_weight = sum(TARGET_METRIC_WEIGHTS.values()) + 1.0  # +1 for hate crime
+    weights = {k: v / total_weight for k, v in TARGET_METRIC_WEIGHTS.items()}
+    weights["hate_crime_norm"] = 1.0 / total_weight
 
-    # === Step 3: define weights (editable) ===
-    # Set all equal for now; you can tune later.
-    weights = {
-        "pm25_norm": 1.0,
-        "aqi_norm": 1.0,
-        "fatalities_norm": 1.0,
-        "crime_norm": 1.0,
-        "hate_crime_norm": 1.0,
-        "water_norm": 1.0,
-        "hazard_norm": 1.0,
-        "broadband_norm": 1.0,
-        "food_norm": 1.0,
-        "parks_norm": 1.0,
-    }
-
-    # normalize weights to sum = 1
-    total_weight = sum(weights.values())
-    weights = {k: v / total_weight for k, v in weights.items()}
-
-    # === Step 4: compute weighted composite index ===
-    merged["env_safety_index"] = 0
+    # === Compute composite ===
+    merged["target_index"] = 0
     for col, w in weights.items():
-        if col in merged.columns:
-            merged["env_safety_index"] += merged[col].fillna(0) * w
+        col_norm = col if col.endswith("_norm") else f"{col}_norm"
+        if col_norm in merged.columns:
+            merged["target_index"] += merged[col_norm].fillna(0) * w
         else:
-            print(f"⚠️ Warning: column {col} not found in merged dataset")
+            print(f"Missing {col_norm} in merged data.")
 
-    merged = classify_percentiles(merged, column="env_safety_index", n_classes=5)
+    merged = classify_percentiles(merged, column="target_index", n_classes=5)
 
-    # === Step 5: save results ===
-    results_dir = "results/norm_targets"
-    os.makedirs(results_dir, exist_ok=True)
-    out_csv = os.path.join(results_dir, "env_safety_index_by_state.csv")
-    out_txt = os.path.join(results_dir, "env_safety_index_by_state.txt")
+    # === Save outputs ===
+    os.makedirs("results/norm_targets", exist_ok=True)
+    out_csv = "results/norm_targets/final_target_index_all_years.csv"
+    out_txt = "results/norm_targets/final_target_index_all_years.txt"
 
-    merged[["State", "env_safety_index", "Percentile_Class"]].to_csv(out_csv, index=False)
+    merged.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(merged[["State", "env_safety_index", "Percentile_Class"]].to_string(index=False))
+        f.write(merged[["State", "target_index", "Percentile_Class"]].to_string(index=False))
 
-    print(f"\n✅ Environment & Safety Index saved to:\n  {out_csv}\n  {out_txt}")
+    print(f"Final Target Index (2015–2025) saved to {out_csv}")
     return merged
 
-
 # Testing functions
-# process_pm25()
-# process_aqi()
-# process_traffic_fatalities()
-# process_violent_crime()
-# process_hate_crime()
-# process_drinking_water()
-# process_natural_hazard()
-# process_broadband()
-# process_food_access()
-# process_parks()
 build_target_index()

@@ -1,54 +1,54 @@
                State  hate_crime_count  hate_crime_norm
-             Alabama               631        89.809022
-              Alaska                66        99.110965
-             Arizona               662        89.298650
-            Arkansas                67        99.094501
-          California              6086         0.000000
-            Colorado               825        86.615081
-         Connecticut               303        95.209088
-            Delaware                53        99.324992
-District of Columbia               508        91.834047
-             Federal               297        95.307870
-             Florida               701        88.656569
-             Georgia               402        93.579190
-                Guam                12       100.000000
-              Hawaii               155        97.645703
-               Idaho               142        97.859730
-            Illinois              1020        83.404676
-             Indiana               500        91.965756
-                Iowa               203        96.855449
-              Kansas               357        94.320053
-            Kentucky               387        93.826144
-           Louisiana               194        97.003622
-               Maine               184        97.168258
-            Maryland               797        87.076062
-       Massachusetts              1466        76.061903
-            Michigan              1236        79.848535
-           Minnesota               572        90.780375
-         Mississippi                56        99.275601
-            Missouri               641        89.644386
-             Montana                35        99.621337
-            Nebraska               157        97.612776
-              Nevada               346        94.501152
-       New Hampshire                98        98.584129
-          New Jersey              3588        41.126111
-          New Mexico               134        97.991439
-            New York              2881        52.765887
-      North Carolina               870        85.874218
-        North Dakota                60        99.209746
-                Ohio              1256        79.519262
-            Oklahoma               220        96.575568
-              Oregon               918        85.083964
-        Pennsylvania               828        86.565690
-        Rhode Island                69        99.061574
-      South Carolina               295        95.340797
-        South Dakota                52        99.341455
-           Tennessee               271        95.735924
-               Texas              1499        75.518604
-                Utah               346        94.501152
-             Vermont               140        97.892657
-            Virginia               804        86.960817
-          Washington              1567        74.399078
-       West Virginia               185        97.151795
-           Wisconsin               405        93.529799
-             Wyoming                64        99.143892
+             Alabama               970        93.315849
+              Alaska               135        99.234477
+             Arizona              2324        83.718458
+            Arkansas               197        98.795010
+          California             14135         0.000000
+            Colorado              2002        86.000851
+         Connecticut               964        93.358378
+            Delaware               173        98.965126
+District of Columbia              1513        89.466969
+             Federal               925        93.634817
+             Florida              1569        89.070031
+             Georgia              1200        91.685568
+                Guam                27       100.000000
+              Hawaii               353        97.689254
+               Idaho               375        97.533314
+            Illinois              1689        88.219450
+             Indiana              1249        91.338248
+                Iowa               416        97.242699
+              Kansas               942        93.514318
+            Kentucky              1854        87.049901
+           Louisiana               560        96.222002
+               Maine               492        96.703998
+            Maryland              1240        91.402041
+       Massachusetts              4254        70.038276
+            Michigan              4103        71.108591
+           Minnesota              1654        88.467536
+         Mississippi               205        98.738305
+            Missouri              1421        90.119081
+             Montana               212        98.688687
+            Nebraska               481        96.781968
+              Nevada               815        94.414517
+       New Hampshire               244        98.461866
+          New Jersey              8470        40.154522
+          New Mexico               392        97.412815
+            New York              6937        51.020697
+      North Carolina              2270        84.101219
+        North Dakota               211        98.695775
+                Ohio              4245        70.102070
+            Oklahoma               512        96.562234
+              Oregon              2136        85.051035
+        Pennsylvania              1586        88.949532
+        Rhode Island               173        98.965126
+      South Carolina               790        94.591721
+        South Dakota               179        98.922597
+           Tennessee              1273        91.168132
+               Texas              3893        72.597108
+                Utah               740        94.946130
+             Vermont               400        97.356110
+            Virginia              1923        86.560817
+          Washington              4792        66.224837
+       West Virginia               571        96.144032
+           Wisconsin               839        94.244400
+             Wyoming               114        99.383329

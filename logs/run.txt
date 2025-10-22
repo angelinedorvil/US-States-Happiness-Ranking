@@ -1,0 +1,629 @@
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+C:\Users\angel\US-States-Happiness-Ranking\src\utils\metrics_utils.py:64: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({var: safe_weighted_mean(g)}))
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+v161_rawvalue not found in 2015, skipping.
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+v148_rawvalue not found in 2015, skipping.
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v125_rawvalue had invalid or zero weights for 2 states
+  States affected: AK, HI
+Processed v124_rawvalue (v124_denominator) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2015, skipping.
+v182_rawvalue not found in 2015, skipping.
+v166_rawvalue not found in 2015, skipping.
+v181_rawvalue not found in 2015, skipping.
+v156_rawvalue not found in 2015, skipping.
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+v155_rawvalue not found in 2015, skipping.
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+v161_rawvalue not found in 2016, skipping.
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+v148_rawvalue not found in 2016, skipping.
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v125_rawvalue had invalid or zero weights for 2 states
+  States affected: AK, HI
+Processed v124_rawvalue (v124_denominator) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 2 states
+  States affected: DC, HI
+v179_rawvalue not found in 2016, skipping.
+v182_rawvalue not found in 2016, skipping.
+v166_rawvalue not found in 2016, skipping.
+v181_rawvalue not found in 2016, skipping.
+v156_rawvalue not found in 2016, skipping.
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+v155_rawvalue not found in 2016, skipping.
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+v161_rawvalue not found in 2017, skipping.
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v125_rawvalue had invalid or zero weights for 2 states
+  States affected: AK, HI
+Processed v124_rawvalue (v124_denominator) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 2 states
+  States affected: DC, HI
+v179_rawvalue not found in 2017, skipping.
+v182_rawvalue not found in 2017, skipping.
+v166_rawvalue not found in 2017, skipping.
+v181_rawvalue not found in 2017, skipping.
+v156_rawvalue not found in 2017, skipping.
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+v155_rawvalue not found in 2017, skipping.
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+v161_rawvalue not found in 2018, skipping.
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v125_rawvalue had invalid or zero weights for 2 states
+  States affected: AK, HI
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2018, skipping.
+v182_rawvalue not found in 2018, skipping.
+v166_rawvalue not found in 2018, skipping.
+v181_rawvalue not found in 2018, skipping.
+v156_rawvalue not found in 2018, skipping.
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+v155_rawvalue not found in 2018, skipping.
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+v161_rawvalue not found in 2019, skipping.
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v125_rawvalue had invalid or zero weights for 2 states
+  States affected: AK, HI
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2019, skipping.
+v182_rawvalue not found in 2019, skipping.
+v166_rawvalue not found in 2019, skipping.
+v181_rawvalue not found in 2019, skipping.
+v156_rawvalue not found in 2019, skipping.
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+Processed v161_rawvalue (v161_denominator) ù reverse=True
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v125_rawvalue had invalid or zero weights for 2 states
+  States affected: AK, HI
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2020, skipping.
+v182_rawvalue not found in 2020, skipping.
+v166_rawvalue not found in 2020, skipping.
+v181_rawvalue not found in 2020, skipping.
+Processed v156_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+Processed v161_rawvalue (v161_denominator) ù reverse=True
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2021, skipping.
+v182_rawvalue not found in 2021, skipping.
+Processed v166_rawvalue (v051_rawvalue (population)) ù reverse=False
+v181_rawvalue not found in 2021, skipping.
+Processed v156_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+Processed v161_rawvalue (v161_denominator) ù reverse=True
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2022, skipping.
+v182_rawvalue not found in 2022, skipping.
+Processed v166_rawvalue (v166_denominator) ù reverse=False
+v181_rawvalue not found in 2022, skipping.
+Processed v156_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+Processed v161_rawvalue (v161_denominator) ù reverse=True
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2023, skipping.
+v182_rawvalue not found in 2023, skipping.
+Processed v166_rawvalue (v166_denominator) ù reverse=False
+v181_rawvalue not found in 2023, skipping.
+Processed v156_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+Processed v161_rawvalue (v161_denominator) ù reverse=True
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+v179_rawvalue not found in 2024, skipping.
+v182_rawvalue not found in 2024, skipping.
+Processed v166_rawvalue (v166_denominator) ù reverse=False
+v181_rawvalue not found in 2024, skipping.
+Processed v156_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Processed v001_rawvalue (v001_denominator) ù reverse=True
+Processed v127_rawvalue (v127_denominator) ù reverse=True
+Processed v128_rawvalue (v128_denominator) ù reverse=True
+Processed v129_rawvalue (v129_denominator) ù reverse=True
+Processed v135_rawvalue (v135_denominator) ù reverse=True
+Processed v161_rawvalue (v161_denominator) ù reverse=True
+Processed v015_rawvalue (v015_denominator) ù reverse=True
+Processed v039_rawvalue (v039_denominator) ù reverse=True
+Processed v148_rawvalue (v148_denominator) ù reverse=True
+Processed v125_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v124_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v124_rawvalue had invalid or zero weights for 1 states
+  States affected: HI
+Processed v179_rawvalue (v179_denominator) ù reverse=False
+Processed v182_rawvalue (v051_rawvalue (population)) ù reverse=True
+  Warning: v182_rawvalue had invalid or zero weights for 1 states
+  States affected: CT
+Processed v166_rawvalue (v166_denominator) ù reverse=False
+Processed v181_rawvalue (v181_denominator) ù reverse=False
+  Warning: v181_rawvalue had invalid or zero weights for 1 states
+  States affected: DC
+Processed v156_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v134_rawvalue (v134_denominator) ù reverse=True
+Processed v139_rawvalue (v051_rawvalue (population)) ù reverse=True
+Processed v083_rawvalue (v083_denominator) ù reverse=True
+Processed v133_rawvalue (v133_denominator) ù reverse=False
+Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
+Hate Crime Data Processed
+Final Target Index (2015û2025) saved to results/norm_targets/final_target_index_all_years.csv
