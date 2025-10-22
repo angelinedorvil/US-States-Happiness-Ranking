@@ -11,6 +11,46 @@ def normalize(series, reverse=False):
         norm = 1 - norm
     return norm * 100
 
+# --- State abbreviation ↔ full name mappings ---
+STATE_MAP = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
+    "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia"
+}
+
+# Standardize state names function
+def standardize_state_names(df):
+    """
+    Ensures that state names are standardized to full names.
+    Works whether states are provided as abbreviations or full names.
+    """
+    df = df.copy()
+    df["State"] = df["State"].str.strip()
+    df["State"] = df["State"].replace(STATE_MAP)  # Convert abbreviations to full names
+    df["State"] = df["State"].str.title()  # Capitalize properly (Alabama, not ALABAMA)
+    return df
+
+# Classify states based on happiness index
+def classify_percentiles(df, column="env_safety_index", n_classes=5):
+    """
+    Adds a percentile-based class column.
+    n_classes = 3 (tertile), 4 (quartile), 5 (quintile), etc.
+    """
+    df = df.copy()
+    labels = [f"Tier_{i}" for i in range(1, n_classes + 1)]
+    df["Percentile_Class"] = pd.qcut(df[column], q=n_classes, labels=labels)
+    return df
+
 # Process air pollution data
 def process_pm25(path="data/target_data/PM2.5_highest_annual_average_concentration_states_2018_to_2020.csv"):
     df = pd.read_csv(path)
@@ -112,13 +152,13 @@ def process_violent_crime():
 
     # === Define weights (equal by default; editable later) ===
     weights = {
-        "Violent_crime": 2.0,
-        "Murder": 2.0,
-        "Rape": 1.5,
+        "Violent_crime": 1.0,
+        "Murder": 1.0,
+        "Rape": 1.0,
         "Robbery": 1.0,
         "Aggravated_assault": 1.0,
         "Property_crime": 1.0,
-        "Burglary": 1.2,
+        "Burglary": 1.0,
         "Larceny_theft": 1.0,
         "Motor_vehicle_theft": 1.0,
     }
@@ -128,7 +168,7 @@ def process_violent_crime():
     # === Read and clean all files ===
     frames = []
     for p in files:
-        df = pd.read_csv(p)
+        df = pd.read_csv(p, quotechar='"', thousands=',')
         keep_cols = ["State"] + list(weights.keys())
         df = df[keep_cols].copy()
 
@@ -365,6 +405,8 @@ def build_target_index():
     # === Step 2: merge all dataframes on 'State' ===
     merged = None
     for name, df in dfs.items():
+        df = standardize_state_names(df)
+        dfs[name] = df
         if merged is None:
             merged = df
         else:
@@ -376,12 +418,12 @@ def build_target_index():
         "pm25_norm": 1.0,
         "aqi_norm": 1.0,
         "fatalities_norm": 1.0,
-        "crime_norm": 1.5,
+        "crime_norm": 1.0,
         "hate_crime_norm": 1.0,
         "water_norm": 1.0,
         "hazard_norm": 1.0,
         "broadband_norm": 1.0,
-        "food_norm": 1.5,
+        "food_norm": 1.0,
         "parks_norm": 1.0,
     }
 
@@ -397,15 +439,17 @@ def build_target_index():
         else:
             print(f"⚠️ Warning: column {col} not found in merged dataset")
 
+    merged = classify_percentiles(merged, column="env_safety_index", n_classes=5)
+
     # === Step 5: save results ===
     results_dir = "results"
     os.makedirs(results_dir, exist_ok=True)
     out_csv = os.path.join(results_dir, "env_safety_index_by_state.csv")
     out_txt = os.path.join(results_dir, "env_safety_index_by_state.txt")
 
-    merged[["State", "env_safety_index"]].to_csv(out_csv, index=False)
+    merged[["State", "env_safety_index", "Percentile_Class"]].to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(merged[["State", "env_safety_index"]].to_string(index=False))
+        f.write(merged[["State", "env_safety_index", "Percentile_Class"]].to_string(index=False))
 
     print(f"\n✅ Environment & Safety Index saved to:\n  {out_csv}\n  {out_txt}")
     return merged
