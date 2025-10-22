@@ -1,0 +1,61 @@
+                                       State  env_safety_index Percentile_Class
+                                     Alabama         59.589055           Tier_2
+                                      Alaska         72.441013           Tier_4
+                              American Samoa          1.137734           Tier_1
+                                     Arizona         62.988176           Tier_2
+                                    Arkansas         58.826654           Tier_2
+                                  California         46.595072           Tier_1
+                                    Colorado         76.684096           Tier_4
+Commonwealth Of The Northern Mariana Islands          0.000000           Tier_1
+                                 Connecticut         78.155328           Tier_5
+                           Country Of Mexico          0.000000           Tier_1
+                                    Delaware         69.331838           Tier_3
+                        District Of Columbia         67.706537           Tier_3
+                                     Federal          9.530787           Tier_1
+                                     Florida         59.428519           Tier_2
+                                     Georgia         61.242245           Tier_2
+                                        Guam         19.826095           Tier_1
+                                      Hawaii         72.296363           Tier_4
+                                       Idaho         76.305468           Tier_4
+                                    Illinois         71.304552           Tier_3
+                                     Indiana         67.704832           Tier_3
+                                        Iowa         72.873725           Tier_4
+                                      Kansas         70.730314           Tier_3
+                                    Kentucky         71.798532           Tier_3
+                                   Louisiana         58.213321           Tier_2
+                                       Maine         78.631393           Tier_5
+                                    Maryland         76.008728           Tier_4
+                               Massachusetts         78.774658           Tier_5
+                                    Michigan         74.517445           Tier_4
+                                   Minnesota         78.909794           Tier_5
+                                 Mississippi         57.749297           Tier_1
+                                    Missouri         66.626587           Tier_3
+                                     Montana         77.744641           Tier_4
+                                    Nebraska         81.172904           Tier_5
+                                      Nevada         76.493932           Tier_4
+                               New Hampshire         80.306548           Tier_5
+                                  New Jersey         70.715452           Tier_3
+                                  New Mexico         65.851891           Tier_2
+                                    New York         76.622544           Tier_4
+                              North Carolina         65.218002           Tier_2
+                                North Dakota         80.076161           Tier_5
+                    Northern Mariana Islands          0.000000           Tier_1
+                                        Ohio         68.012853           Tier_3
+                                    Oklahoma         63.874314           Tier_2
+                                      Oregon         66.956774           Tier_3
+                                Pennsylvania         63.328869           Tier_2
+                                 Puerto Rico         28.872726           Tier_1
+                                Rhode Island         83.002239           Tier_5
+                              South Carolina         60.704078           Tier_2
+                                South Dakota         79.954109           Tier_5
+                                   Tennessee         66.371165           Tier_3
+                                       Texas         51.743195           Tier_1
+                United States Virgin Islands          9.971135           Tier_1
+                                        Utah         78.797203           Tier_5
+                                     Vermont         83.423482           Tier_5
+                              Virgin Islands          8.072679           Tier_1
+                                    Virginia         76.739614           Tier_4
+                                  Washington         58.348785           Tier_2
+                               West Virginia         69.205551           Tier_3
+                                   Wisconsin         78.146387           Tier_5
+                                     Wyoming         75.584335           Tier_4

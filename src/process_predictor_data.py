@@ -81,8 +81,8 @@ def process_mental_health(path="data/predictor_data/Behavioral_Risk_Factor_Surve
     df_state = df_state.merge(df_raw, on=['State', 'State_abbr'], how='left')
 
     # Save snapshot
-    os.makedirs("results", exist_ok=True)
-    out_txt = os.path.join("results", "norm_mental_health_by_state.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_txt = os.path.join("results/norm_predictors", "norm_mental_health_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
@@ -111,8 +111,8 @@ def process_life_expectancy(path="data/predictor_data/U.S._State_Life_Expectancy
     df["life_expectancy_norm"] = normalize(df["life_expectancy"], reverse=False)
 
     # Save snapshot for verification
-    os.makedirs("results", exist_ok=True)
-    out_txt = os.path.join("results", "norm_life_expectancy_by_state.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_txt = os.path.join("results/norm_predictors", "norm_life_expectancy_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df.to_string(index=False))
 
@@ -137,8 +137,8 @@ def process_poverty(path="data/predictor_data/Poverty2023.csv"):
     df_state["poverty_norm"] = normalize(df_state["poverty_rate_2023"], reverse=True)
 
     # Save snapshot
-    os.makedirs("results", exist_ok=True)
-    out_txt = os.path.join("results", "norm_poverty_by_state.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_txt = os.path.join("results/norm_predictors", "norm_poverty_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
@@ -207,8 +207,8 @@ def process_education(path="data/predictor_data/Education2023.csv"):
     df_state["State_abbr"] = df_state["State"].str.upper()
 
     # Save snapshot
-    os.makedirs("results", exist_ok=True)
-    out_txt = os.path.join("results", "norm_education_by_state.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_txt = os.path.join("results/norm_predictors", "norm_education_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
@@ -232,8 +232,8 @@ def process_unemployment(path="data/predictor_data/Unemployment2023.csv"):
     df_state["unemployment_norm"] = normalize(df_state["unemployment_rate_avg"], reverse=True)
     df_state["State_abbr"] = df_state["State"].str.upper()
 
-    os.makedirs("results", exist_ok=True)
-    out_txt = os.path.join("results", "norm_unemployment_by_state.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_txt = os.path.join("results/norm_predictors", "norm_unemployment_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
@@ -259,8 +259,8 @@ def process_income(path="data/predictor_data/Unemployment2023.csv"):
     df_state["income_norm"] = normalize(df_state["median_income"], reverse=False)
     df_state["State_abbr"] = df_state["State"].str.upper()
 
-    os.makedirs("results", exist_ok=True)
-    out_txt = os.path.join("results", "norm_income_by_state.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_txt = os.path.join("results/norm_predictors", "norm_income_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df_state.to_string(index=False))
 
@@ -341,9 +341,9 @@ def build_predictor_dataset():
     df = classify_percentiles(df, column="predictor_index", n_classes=5)
 
     # === Step 6: save merged output ===
-    os.makedirs("results", exist_ok=True)
-    out_csv = os.path.join("results", "predictor_dataset_combined.csv")
-    out_txt = os.path.join("results", "predictor_dataset_combined.txt")
+    os.makedirs("results/norm_predictors", exist_ok=True)
+    out_csv = os.path.join("results/norm_predictors", "predictor_dataset_combined.csv")
+    out_txt = os.path.join("results/norm_predictors", "predictor_dataset_combined.txt")
     df.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(df[["State", "predictor_index", "Percentile_Class"]].to_string(index=False))

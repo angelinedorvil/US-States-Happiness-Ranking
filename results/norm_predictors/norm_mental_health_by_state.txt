@@ -1,0 +1,55 @@
+               State State_abbr  mental_health_norm  mental_health_index
+             Alabama         AL           46.007092            38.164286
+              Alaska         AK           55.407492            37.178571
+             Arizona         AZ           57.512074            37.028571
+            Arkansas         AR           26.326828            31.727273
+          California         CA           57.258400            36.150000
+            Colorado         CO           54.119247            14.512500
+         Connecticut         CT           61.887140            36.300000
+            Delaware         DE           67.418995            36.721429
+District of Columbia         DC           63.940277            36.664286
+             Florida         FL           57.219083            28.072727
+             Georgia         GA           48.538147            37.114286
+                Guam         GU           58.148333            13.050000
+              Hawaii         HI           76.139587            25.909091
+               Idaho         ID           66.723067            38.042857
+            Illinois         IL           63.783825            27.918182
+             Indiana         IN           51.492618            38.014286
+                Iowa         IA           64.646501            36.800000
+              Kansas         KS           64.621257            37.385714
+            Kentucky         KY           48.775555            38.442857
+           Louisiana         LA           32.502281            31.445455
+               Maine         ME           51.470598            38.785714
+            Maryland         MD           62.410155            36.021429
+       Massachusetts         MA           60.992611            37.171429
+            Michigan         MI           51.491636            37.978571
+           Minnesota         MN           66.251655            37.157143
+         Mississippi         MS           46.836845            36.814286
+            Missouri         MO           57.326741            38.371429
+             Montana         MT           57.235515            38.335714
+            Nebraska         NE           76.440672            36.007143
+              Nevada         NV           38.617082            37.314286
+       New Hampshire         NH           57.473846            37.478571
+          New Jersey         NJ           68.222795            35.535714
+          New Mexico         NM           50.799620            38.650000
+            New York         NY           57.962165            27.863636
+      North Carolina         NC           60.592829            37.657143
+        North Dakota         ND           72.019260            28.063636
+                Ohio         OH           41.810898            38.864286
+            Oklahoma         OK           44.392064            38.707143
+              Oregon         OR           39.642461            16.550000
+        Pennsylvania         PA           50.572084            14.900000
+         Puerto Rico         PR           54.696540            38.742857
+        Rhode Island         RI           51.822942            37.907143
+      South Carolina         SC           55.293282            37.371429
+        South Dakota         SD           68.720007            12.825000
+           Tennessee         TN           29.976289            32.045455
+               Texas         TX           53.040590            28.718182
+ U.S. Virgin Islands         VI           68.243462            24.518182
+                Utah         UT           56.547457            38.542857
+             Vermont         VT           53.682206            29.918182
+            Virginia         VA           54.685012            29.490909
+          Washington         WA           45.198003            29.600000
+       West Virginia         WV           30.862084            40.714286
+           Wisconsin         WI           60.720546            37.457143
+             Wyoming         WY           66.782875            29.018182

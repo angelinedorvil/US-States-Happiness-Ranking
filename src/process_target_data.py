@@ -62,7 +62,7 @@ def process_pm25(path="data/target_data/PM2.5_highest_annual_average_concentrati
     df["pm25_norm"] = normalize(df["pm25_avg"], reverse=True)  # lower = better
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_air_pollution_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -93,7 +93,7 @@ def process_aqi(
     df_state["aqi_norm"] = normalize(df_state["aqi_gooddays"], reverse=False)  # higher = better'
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_aqi_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -120,7 +120,7 @@ def process_traffic_fatalities(
     df_state["fatalities_norm"] = normalize(df_state["fatalities"], reverse=True)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_traffic_fatalities_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -189,7 +189,7 @@ def process_violent_crime():
     df_avg["crime_norm"] = normalize(df_avg["crime_composite"], reverse=True)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_violent_crime_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -207,7 +207,7 @@ def process_hate_crime(path="data/target_data/hate_crime.csv"):
     df_state["hate_crime_norm"] = normalize(df_state["hate_crime_count"], reverse=True)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_hate_crime_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -254,7 +254,7 @@ def process_drinking_water(path="data/target_data/SDWA_PN_VIOLATION_ASSOC.csv"):
     df_state["water_norm"] = normalize(df_state["water_violations"], reverse=True)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_drinking_water_violations_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -299,7 +299,7 @@ def process_natural_hazard(
     df_avg["hazard_norm"] = normalize(df_avg["hazard_score"], reverse=True)
 
     # Save to file
-    results_dir = "results" 
+    results_dir = "results/norm_targets" 
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_natural_hazard_risk_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -315,7 +315,7 @@ def process_broadband(path="data/target_data/bdc_comparison_fixed_state_total_al
     df["broadband_norm"] = normalize(df["broadband_coverage"], reverse=False)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_broadband_access_by_state.txt")   
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -335,7 +335,7 @@ def process_food_access(path="data/target_data/FoodAccessResearchAtlasData2019.c
     df_state["food_norm"] = normalize(df_state["food_low_access"], reverse=True)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_food_insecurity_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -369,7 +369,7 @@ def process_parks(path="data/target_data/analytic_data2025_v2.csv"):
     df_state["parks_norm"] = normalize(df_state["parks_access"], reverse=False)
 
     # Save to file
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_txt = os.path.join(results_dir, "norm_parks_access_by_state.txt")
     with open(out_txt, "w", encoding="utf-8") as f:
@@ -442,7 +442,7 @@ def build_target_index():
     merged = classify_percentiles(merged, column="env_safety_index", n_classes=5)
 
     # === Step 5: save results ===
-    results_dir = "results"
+    results_dir = "results/norm_targets"
     os.makedirs(results_dir, exist_ok=True)
     out_csv = os.path.join(results_dir, "env_safety_index_by_state.csv")
     out_txt = os.path.join(results_dir, "env_safety_index_by_state.txt")

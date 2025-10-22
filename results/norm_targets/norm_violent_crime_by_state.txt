@@ -1,0 +1,53 @@
+               State  crime_composite  crime_norm
+             ALABAMA       741.007407   46.546754
+              ALASKA       913.659259   28.676358
+             ARIZONA       701.514815   50.634450
+            ARKANSAS       780.207407   42.489343
+          CALIFORNIA       633.051852   57.720735
+            COLORADO       674.829630   53.396510
+         CONNECTICUT       407.151852   81.102601
+            DELAWARE       616.051852   59.480326
+DISTRICT OF COLUMBIA      1190.711111    0.000000
+             FLORIDA       600.825926   61.056292
+             GEORGIA       660.814815   54.847119
+              HAWAII       688.244444   52.008004
+               IDAHO       393.737037   82.491106
+            ILLINOIS       516.622222   69.771828
+             INDIANA       575.562963   63.671144
+                IOWA       469.459259   74.653449
+              KANSAS       679.692593   52.893167
+            KENTUCKY       488.133333   72.720581
+           LOUISIANA       844.640741   35.820146
+               MAINE       332.062963   88.874705
+            MARYLAND       562.362963   65.037415
+       MASSACHUSETTS       365.159259   85.449060
+            MICHIGAN       471.233333   74.469822
+           MINNESOTA       505.248148   70.949106
+         MISSISSIPPI       613.762963   59.717239
+            MISSOURI       710.011111   49.755037
+             MONTANA       633.162963   57.709234
+            NEBRASKA       537.518519   67.608949
+              NEVADA       664.874074   54.426964
+       NEW HAMPSHIRE       329.318519   89.158770
+          NEW JERSEY       366.944444   85.264284
+          NEW MEXICO       966.485185   23.208590
+            NEW YORK       402.844444   81.548441
+      NORTH CAROLINA       631.359259   57.895927
+        NORTH DAKOTA       521.492593   69.267719
+                OHIO       560.100000   65.271644
+            OKLAHOMA       726.414815   48.057166
+              OREGON       704.396296   50.336201
+        PENNSYLVANIA       406.722222   81.147070
+         PUERTO RICO       224.577778  100.000000
+        RHODE ISLAND       413.225926   80.473901
+      SOUTH CAROLINA       790.844444   41.388352
+        SOUTH DAKOTA       483.607407   73.189039
+           TENNESSEE       772.603704   43.276367
+               TEXAS       633.762963   57.647131
+                UTAH       598.103704   61.338056
+             VERMONT       332.155556   88.865121
+            VIRGINIA       417.433333   80.038412
+          WASHINGTON       725.514815   48.150320
+       WEST VIRGINIA       422.040741   79.561521
+           WISCONSIN       432.681481   78.460147
+             WYOMING       442.255556   77.469178
