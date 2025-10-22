@@ -1,0 +1,52 @@
+               State  predictor_index Percentile_Class
+              Alaska        41.263054           Tier_2
+             Alabama        27.230871           Tier_1
+            Arkansas        23.683256           Tier_1
+             Arizona        37.744431           Tier_2
+          California        53.641187           Tier_4
+            Colorado        56.654129           Tier_4
+         Connecticut        64.559587           Tier_5
+District of Columbia        52.314110           Tier_3
+            Delaware        54.070383           Tier_4
+             Florida        47.489220           Tier_2
+             Georgia        35.258412           Tier_1
+              Hawaii        65.819008           Tier_5
+                Iowa        57.331653           Tier_4
+               Idaho        55.170877           Tier_4
+            Illinois        48.303915           Tier_3
+             Indiana        47.827381           Tier_3
+              Kansas        53.249199           Tier_3
+            Kentucky        24.220932           Tier_1
+           Louisiana        20.163354           Tier_1
+       Massachusetts        64.424413           Tier_5
+            Maryland        61.423283           Tier_5
+               Maine        49.400375           Tier_3
+            Michigan        39.654986           Tier_2
+           Minnesota        63.260683           Tier_5
+            Missouri        40.673045           Tier_2
+         Mississippi        14.135458           Tier_1
+             Montana        47.859749           Tier_3
+      North Carolina        39.624248           Tier_2
+        North Dakota        58.702187           Tier_4
+            Nebraska        60.212367           Tier_4
+       New Hampshire        67.239316           Tier_5
+          New Jersey        65.751511           Tier_5
+          New Mexico        25.740076           Tier_1
+              Nevada        48.408006           Tier_3
+            New York        55.265671           Tier_4
+                Ohio        41.579645           Tier_2
+            Oklahoma        30.533630           Tier_1
+              Oregon        47.110409           Tier_2
+        Pennsylvania        45.729404           Tier_2
+        Rhode Island        64.016522           Tier_5
+      South Carolina        33.262191           Tier_1
+        South Dakota        51.450306           Tier_3
+           Tennessee        30.928847           Tier_1
+               Texas        40.549663           Tier_2
+                Utah        63.574390           Tier_5
+            Virginia        52.569323           Tier_3
+             Vermont        60.323606           Tier_5
+          Washington        50.679654           Tier_3
+           Wisconsin        56.623627           Tier_4
+       West Virginia        19.975143           Tier_1
+             Wyoming        54.262065           Tier_4

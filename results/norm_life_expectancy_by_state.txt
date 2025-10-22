@@ -1,0 +1,52 @@
+               State  life_expectancy State_abbr  life_expectancy_norm
+              Hawaii             80.9         HI            100.000000
+          California             80.9         CA            100.000000
+            New York             80.7         NY             96.923077
+           Minnesota             80.4         MN             92.307692
+       Massachusetts             80.4         MA             92.307692
+         Connecticut             80.3         CT             90.769231
+          New Jersey             80.1         NJ             87.692308
+          Washington             80.0         WA             86.153846
+            Colorado             80.0         CO             86.153846
+             Vermont             79.8         VT             83.076923
+                Utah             79.7         UT             81.538462
+              Oregon             79.6         OR             80.000000
+               Idaho             79.5         ID             78.461538
+        Rhode Island             79.5         RI             78.461538
+       New Hampshire             79.4         NH             76.923077
+           Wisconsin             79.3         WI             75.384615
+            Nebraska             79.2         NE             73.846154
+            Virginia             79.1         VA             72.307692
+             Florida             79.0         FL             70.769231
+                Iowa             79.0         IA             70.769231
+            Illinois             79.0         IL             70.769231
+             Arizona             78.8         AZ             67.692308
+        North Dakota             78.8         ND             67.692308
+               Texas             78.6         TX             64.615385
+            Maryland             78.5         MD             63.076923
+             Montana             78.4         MT             61.538462
+        South Dakota             78.4         SD             61.538462
+        Pennsylvania             78.3         PA             60.000000
+               Maine             78.3         ME             60.000000
+              Kansas             78.2         KS             58.461538
+            Delaware             78.1         DE             56.923077
+District of Columbia             78.0         DC             55.384615
+              Nevada             78.0         NV             55.384615
+            Michigan             78.0         MI             55.384615
+              Alaska             77.7         AK             50.769231
+             Wyoming             77.7         WY             50.769231
+      North Carolina             77.6         NC             49.230769
+             Georgia             77.4         GA             46.153846
+             Indiana             77.0         IN             40.000000
+            Missouri             76.9         MO             38.461538
+          New Mexico             76.9         NM             38.461538
+                Ohio             76.9         OH             38.461538
+      South Carolina             76.8         SC             36.923077
+           Louisiana             75.7         LA             20.000000
+            Oklahoma             75.7         OK             20.000000
+            Arkansas             75.7         AR             20.000000
+           Tennessee             75.6         TN             18.461538
+            Kentucky             75.5         KY             16.923077
+             Alabama             75.2         AL             12.307692
+       West Virginia             74.5         WV              1.538462
+         Mississippi             74.4         MS              0.000000
