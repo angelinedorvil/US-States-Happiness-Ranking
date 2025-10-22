@@ -315,30 +315,30 @@ def build_predictor_dataset():
     else:
         print("⚠️ No valid rows for regression — skipping imputation.")
 
-    # === Step 4: define weights (equal for now; editable later) ===
-    weights = {
-        "mental_health_norm": 0.5,  # can be lowered later (e.g., 0.5)
-        "life_expectancy_norm": 1.0,
-        "poverty_norm": 1.0,
-        "education_index_norm": 1.0,
-        "unemployment_norm": 1.0,
-        "income_norm": 1.0,
-    }
+    # # === Step 4: define weights (equal for now; editable later) ===
+    # weights = {
+    #     "mental_health_norm": 0.5,  # can be lowered later (e.g., 0.5)
+    #     "life_expectancy_norm": 1.0,
+    #     "poverty_norm": 1.0,
+    #     "education_index_norm": 1.0,
+    #     "unemployment_norm": 1.0,
+    #     "income_norm": 1.0,
+    # }
 
-    # Normalize weights to sum = 1
-    total_weight = sum(weights.values())
-    weights = {k: v / total_weight for k, v in weights.items()}
+    # # Normalize weights to sum = 1
+    # total_weight = sum(weights.values())
+    # weights = {k: v / total_weight for k, v in weights.items()}
 
-    # === Step 5: compute weighted predictor index ===
-    df["predictor_index"] = 0
-    for col, w in weights.items():
-        if col in df.columns:
-            df["predictor_index"] += df[col].fillna(0) * w
-        else:
-            print(f"⚠️ Warning: column {col} not found in merged dataset")
+    # # === Step 5: compute weighted predictor index ===
+    # df["predictor_index"] = 0
+    # for col, w in weights.items():
+    #     if col in df.columns:
+    #         df["predictor_index"] += df[col].fillna(0) * w
+    #     else:
+    #         print(f"⚠️ Warning: column {col} not found in merged dataset")
 
-    # Optional percentile classification (e.g., quintiles)
-    df = classify_percentiles(df, column="predictor_index", n_classes=5)
+    # # Optional percentile classification (e.g., quintiles)
+    # df = classify_percentiles(df, column="predictor_index", n_classes=5)
 
     # === Step 6: save merged output ===
     os.makedirs("results/norm_predictors", exist_ok=True)
@@ -346,7 +346,7 @@ def build_predictor_dataset():
     out_txt = os.path.join("results/norm_predictors", "predictor_dataset_combined.txt")
     df.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
-        f.write(df[["State", "predictor_index", "Percentile_Class"]].to_string(index=False))
+        f.write(df[["State", "mental_health_norm", "life_expectancy_norm", "poverty_norm", "income_norm", "unemployment_norm", "education_index_norm"]].to_string(index=False))
 
     print(f"\n✅ Predictor dataset saved to:\n  {out_csv}\n  {out_txt}\n")
     return df
