@@ -8,7 +8,7 @@ def normalize(series, reverse=False):
     norm = (series - series.min()) / (series.max() - series.min())
     if reverse:
         norm = 1 - norm
-    return norm * 100
+    return norm
 
 def process_chr_metric(df, var, reverse=False, year=None):
     """

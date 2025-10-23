@@ -75,7 +75,8 @@ def classify_percentiles(df, column="env_safety_index", n_classes=5):
     n_classes = 3 (tertile), 4 (quartile), 5 (quintile), etc.
     """
     df = df.copy()
-    labels = [f"Tier_{i}" for i in range(1, n_classes + 1)]
+    # labels = [f"Tier_{i}" for i in range(1, n_classes + 1)]
+    labels = list(range(1, n_classes + 1))
     df["Percentile_Class"] = pd.qcut(df[column], q=n_classes, labels=labels)
     return df
 

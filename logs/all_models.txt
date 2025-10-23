@@ -1,0 +1,8 @@
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\impute\_base.py:653: UserWarning: Skipping features without any observed values: ['v170_rawvalue_norm']. At least one non-missing value is needed for imputation with strategy='mean'.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\impute\_base.py:653: UserWarning: Skipping features without any observed values: ['v170_rawvalue_norm']. At least one non-missing value is needed for imputation with strategy='mean'.
+  warnings.warn(
+Evaulation finished for RandomForest. Results saved to results\models
+Report finished for RandomForest
+Evaulation finished for kNN. Results saved to results\models
+Report finished for kNN
