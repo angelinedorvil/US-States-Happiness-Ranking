@@ -27,10 +27,10 @@ X_test = imputer.transform(X_test)
 
 # Train 4 models
 rf = model_random_forest.train_model(X_train, y_train, RESULTS_DIR)
-# dt = model_decision_tree.train_model(X_train, y_train, RESULTS_DIR)
+dt = model_decision_tree.train_model(X_train, y_train, RESULTS_DIR)
 knn = model_knn.train_model(X_train, y_train, RESULTS_DIR)
-# svm = model_svm.train_model(X_train, y_train, RESULTS_DIR)
+svm = model_svm.train_model(X_train, y_train, RESULTS_DIR)
 
 # Evaluate models , "DecisionTree": dt, "kNN": knn, "SVM": svm
-for name, model in {"RandomForest": rf, "kNN": knn}.items():
+for name, model in {"RandomForest": rf, "kNN": knn, "DecisionTree": dt, "SVM": svm}.items():
     evaluate_model(model, X_test, y_test, name, RESULTS_DIR)

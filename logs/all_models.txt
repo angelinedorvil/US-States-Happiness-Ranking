@@ -6,3 +6,7 @@ Evaulation finished for RandomForest. Results saved to results\models
 Report finished for RandomForest
 Evaulation finished for kNN. Results saved to results\models
 Report finished for kNN
+Evaulation finished for DecisionTree. Results saved to results\models
+Report finished for DecisionTree
+Evaulation finished for SVM. Results saved to results\models
+Report finished for SVM
