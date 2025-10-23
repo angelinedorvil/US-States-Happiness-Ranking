@@ -1,0 +1,9 @@
+{
+  "best_params": {
+    "svm__C": 0.1,
+    "svm__degree": 2,
+    "svm__gamma": "scale",
+    "svm__kernel": "linear"
+  },
+  "cv_r2": 0.5796261317584891
+}

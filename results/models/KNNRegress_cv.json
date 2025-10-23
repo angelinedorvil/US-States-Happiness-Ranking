@@ -1,0 +1,8 @@
+{
+  "best_params": {
+    "n_neighbors": 5,
+    "p": 2,
+    "weights": "uniform"
+  },
+  "cv_r2": 0.6282631735926405
+}
