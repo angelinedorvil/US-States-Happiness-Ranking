@@ -16,10 +16,12 @@ This repository implements an **end-to-end machine learning pipeline** that repr
 ## Repository Structure
 
 <details> <summary><b>data/</b></summary>
+
  `data/`   ->  Raw source files and intermediate cleaned datasets. 
 </details>
 
 <details> <summary><b>results/</b> – Model outputs and analysis artifacts</summary>
+
  `results/norm_predictors/` -> Normalized predictor variables (X)      
 
  `results/norm_targets/`    -> Normalized target variables (y)     
@@ -30,6 +32,7 @@ This repository implements an **end-to-end machine learning pipeline** that repr
 </details>
 
 <details> <summary><b>src/</b> – Core source code</summary>
+
 src/config.py	                -> Global constants (paths, random seed, etc.)
 
 src/train_all_models.py	        -> Orchestration script to train and evaluate all models
