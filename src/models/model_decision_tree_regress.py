@@ -21,11 +21,16 @@ def train_model(X_train, y_train, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     joblib.dump(search.best_estimator_, f"{out_dir}/DecisionTreeRegress_best.joblib")
 
+    best_idx = search.best_index_
+    split_keys = [k for k in search.cv_results_.keys() if k.startswith("split") and k.endswith("_test_score")]
+    fold_scores = [float(search.cv_results_[k][best_idx]) for k in split_keys]
+
     results = {
         "best_params": search.best_params_,
-        "cv_r2": float(search.best_score_)
+        "cv_r2_mean": float(search.best_score_),
+        "cv_r2_per_fold": fold_scores,
     }
-    with open(f"{out_dir}/DecisionTreeRegress_cv.json", "w") as f:
+    with open(f"{out_dir}/DecisionTree_Regression_cv.json", "w") as f:
         json.dump(results, f, indent=2)
 
     return search.best_estimator_

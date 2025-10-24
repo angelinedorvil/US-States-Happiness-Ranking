@@ -1,8 +1,3 @@
-# import pandas as pd
-# from sklearn.ensemble import RandomForestClassifier
-
-# print("✅ pandas version:", pd.__version__)
-# print("✅ scikit-learn test:", RandomForestClassifier)
 import joblib
 joblib_models = {
     "RandomForest_regression": "results/models/RandomForestRegress_best.joblib",
