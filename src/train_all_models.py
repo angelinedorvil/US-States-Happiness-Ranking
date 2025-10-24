@@ -1,9 +1,8 @@
 from models import model_decision_tree_class, model_knn_class, model_random_forest_class, model_svm_class, model_random_forest_regress, model_decision_tree_regress, model_knn_regress, model_svm_regress
 from utils.evaluation_utils import evaluate_model, evaluate_regression
-from config import RESULTS_DIR
+from config import RESULTS_DIR, PLOTS_DIR, RANDOM_STATE
 import pandas as pd, joblib
 from sklearn.model_selection import train_test_split
-from config import RANDOM_STATE
 from sklearn.impute import SimpleImputer
 
 
@@ -42,7 +41,7 @@ def classifier_initialization():
 
     type = "classification"
 
-    evaluate_and_save(classifier_models, X_test, y_test, X_train, y_train, RESULTS_DIR, type)
+    evaluate_and_save(classifier_models, X_test, y_test, X_train, y_train, RESULTS_DIR, PLOTS_DIR, type)
 
     return 
 
@@ -65,7 +64,7 @@ def regression_initialization():
 
     type = "regression"
 
-    evaluate_and_save(regressor_models, X_test, y_test, X_train, y_train, RESULTS_DIR, type)
+    evaluate_and_save(regressor_models, X_test, y_test, X_train, y_train, RESULTS_DIR, PLOTS_DIR, type)
 
     return
 
@@ -76,14 +75,14 @@ def fill_in_missing_values(X_train, X_test):
     X_test = imputer.transform(X_test)
     return X_train, X_test
 
-def evaluate_and_save(models, X_test, y_test, X_train, y_train, directory, type):
+def evaluate_and_save(models, X_test, y_test, X_train, y_train, model_directory, plot_directory, type):
     for model_name, model_module in models.items():
-        model = model_module.train_model(X_train, y_train, directory)
+        model = model_module.train_model(X_train, y_train, model_directory)
         if type == "classification":
-            evaluate_model(model, X_test, y_test, model_name, directory)
+            evaluate_model(model, X_test, y_test, model_name, model_directory, plot_directory)
         else:
-            evaluate_regression(model, X_test, y_test, model_name, directory)
+            evaluate_regression(model, X_test, y_test, model_name, model_directory, plot_directory)
 
 if __name__ == "__main__":
-    # classifier_initialization()
+    classifier_initialization()
     regression_initialization()

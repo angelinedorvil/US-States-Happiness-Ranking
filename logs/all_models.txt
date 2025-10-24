@@ -2,6 +2,34 @@ C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\impute
   warnings.warn(
 C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\impute\_base.py:653: UserWarning: Skipping features without any observed values: ['v170_rawvalue_norm']. At least one non-missing value is needed for imputation with strategy='mean'.
   warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\model_selection\_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=4.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\impute\_base.py:653: UserWarning: Skipping features without any observed values: ['v170_rawvalue_norm']. At least one non-missing value is needed for imputation with strategy='mean'.
+  warnings.warn(
+C:\Users\angel\US-States-Happiness-Ranking\venv\lib\site-packages\sklearn\impute\_base.py:653: UserWarning: Skipping features without any observed values: ['v170_rawvalue_norm']. At least one non-missing value is needed for imputation with strategy='mean'.
+  warnings.warn(
+Evaulation finished for RandomForest_classification (Classification). Results saved to results\models
+Report finished for RandomForest_classification (Classification).
+Evaulation finished for kNN_classification (Classification). Results saved to results\models
+Report finished for kNN_classification (Classification).
+Evaulation finished for DecisionTree_classification (Classification). Results saved to results\models
+Report finished for DecisionTree_classification (Classification).
+Evaulation finished for SVM_classification (Classification). Results saved to results\models
+Report finished for SVM_classification (Classification).
 Evaluation finished for RandomForest_regression (Regression). Results saved to results\models
 Report finished for RandomForest_regression (Regression).
 Evaluation finished for kNN_regression (Regression). Results saved to results\models
