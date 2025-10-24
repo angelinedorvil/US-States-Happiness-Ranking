@@ -7,12 +7,12 @@ from sklearn.impute import SimpleImputer
 
 
 # Train 9 Classifier models
-classifier_models = {
-    "RandomForest_classification": model_random_forest_class,
-    "kNN_classification": model_knn_class,
-    "DecisionTree_classification": model_decision_tree_class,
-    "SVM_classification": model_svm_class
-}
+# classifier_models = {
+#     "RandomForest_classification": model_random_forest_class,
+#     "kNN_classification": model_knn_class,
+#     "DecisionTree_classification": model_decision_tree_class,
+#     "SVM_classification": model_svm_class
+# }
 
 # Train 9 regressor models
 regressor_models = {
@@ -84,5 +84,5 @@ def evaluate_and_save(models, X_test, y_test, X_train, y_train, model_directory,
             evaluate_regression(model, X_test, y_test, model_name, model_directory, plot_directory)
 
 if __name__ == "__main__":
-    classifier_initialization()
+    #classifier_initialization() For Milestone 3
     regression_initialization()

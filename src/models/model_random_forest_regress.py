@@ -37,12 +37,19 @@ def train_model(X_train, y_train, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     joblib.dump(search.best_estimator_, f"{out_dir}/RandomForestRegress_best.joblib")
 
-    # === Save CV results ===
-    results = {
+    # Get per-fold test scores for the best hyperparameters
+    best_idx = search.best_index_
+    split_keys = [k for k in search.cv_results_.keys() if k.startswith("split") and k.endswith("_test_score")]
+    fold_scores = [float(search.cv_results_[k][best_idx]) for k in split_keys]
+
+    # Save everything
+    cv_summary = {
         "best_params": search.best_params_,
-        "cv_r2": float(search.best_score_)
+        "cv_r2_mean": float(search.best_score_),
+        "cv_r2_per_fold": fold_scores
     }
-    with open(f"{out_dir}/RandomForestRegress_cv.json", "w") as f:
-        json.dump(results, f, indent=2)
+
+    with open(f"{out_dir}/RandomForest_Regression_cv.json", "w") as f:
+        json.dump(cv_summary, f, indent=2)
 
     return search.best_estimator_
