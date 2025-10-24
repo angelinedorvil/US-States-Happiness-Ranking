@@ -1,8 +1,10 @@
-# US-States-Happiness-Ranking
+# US States Happiness Ranking
 Predicting regional happiness tiers across U.S. states, a machine learning approach
 
 **Author:** Angeline Dorvil  
+
 **Assignment:** Student Proud Project 
+
 **Date:** Fall 2025  
 
 
