@@ -1,0 +1,10 @@
+Model,t_statistic,p_value
+SVM,4.113,0.015
+KNN,2.138,0.099
+Linear,0.266,0.803
+Ridge,-2.576,0.062
+Lasso,-6.366,0.003
+Polynomial,0.108,0.919
+MLP,0.41,0.703
+XGBoost,-0.912,0.413
+DecisionTree,1.639,0.177
