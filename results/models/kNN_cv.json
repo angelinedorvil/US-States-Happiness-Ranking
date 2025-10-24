@@ -1,8 +1,0 @@
-{
-  "best_params": {
-    "n_neighbors": 7,
-    "p": 1,
-    "weights": "distance"
-  },
-  "cv_f1_macro": 0.5879999999999999
-}

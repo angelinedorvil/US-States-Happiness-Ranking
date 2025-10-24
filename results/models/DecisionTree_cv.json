@@ -1,9 +1,0 @@
-{
-  "best_params": {
-    "criterion": "entropy",
-    "max_depth": 5,
-    "min_samples_leaf": 1,
-    "min_samples_split": 5
-  },
-  "cv_f1_macro": 0.4413333333333333
-}

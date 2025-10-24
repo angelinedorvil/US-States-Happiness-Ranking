@@ -41,7 +41,7 @@ PREDICTOR_METRICS = {
     "v171_rawvalue": True,    # Child care cost burden (lower is better)
     "v151_rawvalue": True,    # Gender pay gap (lower is better)
     "v063_rawvalue": False,   # Median household income (higher is better)
-    "v170_rawvalue": False,   # Living wage (higher is better)
+    #"v170_rawvalue": False,   # Living wage (higher is better)
     "v172_rawvalue": False,   # Child care centers (higher is better)
     "v141_rawvalue": True,    # Residential segregation (Black/White) (lower is better)
     "v149_rawvalue": True,    # Disconnected youth (lower is better)
@@ -101,7 +101,7 @@ PREDICTOR_METRIC_WEIGHTS = {
     "v171_rawvalue": 1.0,
     "v151_rawvalue": 1.0,
     "v063_rawvalue": 1.0,
-    "v170_rawvalue": 1.0,
+    #"v170_rawvalue": 1.0,
     "v172_rawvalue": 1.0,
     "v141_rawvalue": 1.0,
     "v149_rawvalue": 1.0,

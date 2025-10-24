@@ -1,9 +1,11 @@
-from models import model_decision_tree_class, model_knn_class, model_random_forest_class, model_svm_class, model_random_forest_regress, model_decision_tree_regress, model_knn_regress, model_svm_regress
+from models import model_decision_tree_class, model_knn_class, model_random_forest_class, model_svm_class, model_random_forest_regress, model_decision_tree_regress, model_knn_regress, model_svm_regress, model_xgboost_regress, model_ridge_regress, model_lasso_regress, model_linear_regress, model_polyn_regress, model_mlp_regress
 from utils.evaluation_utils import evaluate_model, evaluate_regression
 from config import RESULTS_DIR, PLOTS_DIR, RANDOM_STATE
 import pandas as pd, joblib
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
+from process_predictor_data import build_predictor_index
+from process_target_data import build_target_index
 
 
 # Train 9 Classifier models
@@ -17,9 +19,16 @@ from sklearn.impute import SimpleImputer
 # Train 9 regressor models
 regressor_models = {
     "RandomForest_regression": model_random_forest_regress,
-    "kNN_regression": model_knn_regress,
+    "kNN_regression": model_knn_regress, # Testing Extra
     "DecisionTree_regression": model_decision_tree_regress, 
-    "SVM_regression": model_svm_regress
+    "SVM_regression": model_svm_regress,
+    "XGBoost_regression": model_xgboost_regress,
+    "Ridge_regression": model_ridge_regress,
+    "Lasso_regression": model_lasso_regress,
+    "Linear_regression": model_linear_regress,
+    "Polynomial_regression": model_polyn_regress,
+    "MLP_regression": model_mlp_regress
+
 }
 
 def classifier_initialization():
@@ -85,4 +94,6 @@ def evaluate_and_save(models, X_test, y_test, X_train, y_train, model_directory,
 
 if __name__ == "__main__":
     #classifier_initialization() For Milestone 3
+    build_target_index()
+    build_predictor_index()
     regression_initialization()
