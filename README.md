@@ -20,41 +20,69 @@ This repository implements an **end-to-end machine learning pipeline** that repr
 </details>
 
 <details> <summary><b>results/</b> – Model outputs and analysis artifacts</summary>
- `results/norm_predictors/` -> Normalized predictor variables (X)                   
- `results/norm_targets/`    -> Normalized target variables (y)                      
+ `results/norm_predictors/` -> Normalized predictor variables (X)      
+
+ `results/norm_targets/`    -> Normalized target variables (y)     
+
  `results/models/`          -> Trained model artifacts (`.joblib`, `.json`, `.csv`) 
+
  `results/plots/`           -> Saved figures, tables, and visualizations            
 </details>
 
 <details> <summary><b>src/</b> – Core source code</summary>
 src/config.py	                -> Global constants (paths, random seed, etc.)
+
 src/train_all_models.py	        -> Orchestration script to train and evaluate all models
+
 src/process_predictor_data.py	-> Cleans and normalizes predictor data
+
 src/process_target_data.py	    -> Cleans and normalizes target variable
+
 src/models/	                    -> Individual regression model scripts
+
 ├── model_random_forest_regress.py	-> Random Forest Regressor
+
 ├── model_decision_tree_regress.py	-> Decision Tree Regressor
+
 ├── model_knn_regress.py	        -> k-Nearest Neighbors Regressor
+
 ├── model_svm_regress.py	        -> Support Vector Machine Regressor
+
 ├── model_xgboost_regress.py	    -> XGBoost Regressor
+
 ├── model_ridge_regress.py	        -> Ridge Regressor
+
 ├── model_lasso_regress.py	        -> Lasso Regressor
+
 ├── model_linear_regress.py	        -> Linear Regressor
+
 ├── model_polyn_regress.py	        -> Polynomial Regressor
+
 └── model_mlp_regress.py	        -> Multi-Layer Perceptron (Neural Network) Regressor
+
 src/utils/	                    -> Shared utility modules
+
 ├── metrics_utils.py	            -> Metrics and performance calculations
+
 ├── evaluation_utils.py	            -> Cross-validation and t-test utilities
+
 └── plots_utils.py	                -> Common plotting functions
 </details>
 
 <details> <summary><b>notebooks/</b> – Jupyter notebooks for end-to-end workflow</summary>
+
 notebooks/01_data_exploration.ipynb	
+
 notebooks/02_target_processing.ipynb	
+
 notebooks/03_predictor_processing.ipynb	
+
 notebooks/04_model_training_classification.ipynb	
+
 notebooks/05_model_training_regression.ipynb	
+
 notebooks/06_model_comparison_ttest.ipynb	
+
 notebooks/07_feature_importance.ipynb	
 </details>
 
