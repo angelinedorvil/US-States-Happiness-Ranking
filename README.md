@@ -94,16 +94,20 @@ requirements.txt	            -> Python dependencies
 
 README.md	                    -> Project documentation (this file)
 
-##  How to Run the Code
+## Run code
 
 ### 1. Install Environment
 ```bash
 git clone https://github.com/angelinedorvil/US-States-Happiness-Ranking.git
+
 cd US-States-Happiness-Ranking
+
 pip install -r requirements.txt
 
 python train_all_models.py *OR* use Notebooks (see below)
-### 2. Datasets
+```
+
+##  Datasets
 
 Review notebooks above for detailed information with code examples of each stage. Each notebook can be run. Notebooks can be run **Sequencially** to reach paper outputs.
 
