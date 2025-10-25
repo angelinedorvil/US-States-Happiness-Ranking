@@ -94,6 +94,6 @@ def evaluate_and_save(models, X_test, y_test, X_train, y_train, model_directory,
 
 if __name__ == "__main__":
     #classifier_initialization() For Milestone 3
-    # build_target_index() 
-    # build_predictor_index()
+    build_target_index() 
+    build_predictor_index()
     regression_initialization()
