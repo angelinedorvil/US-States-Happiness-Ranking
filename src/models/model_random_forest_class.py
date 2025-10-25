@@ -6,17 +6,13 @@ import joblib, json
 def train_model(X_train, y_train, out_dir):
 
     """
-    5. Optional Experiments (for bonus points or milestone 3)
-
+    milestone 3
         Try class_weight="balanced" to offset any class imbalance.
 
-        Add max_features=["sqrt", 0.5, None] to your grid for feature-subspace tuning.
+        Add max_features=["sqrt", 0.5, None] to  grid for feature-subspace tuning.
 
         Compare with DecisionTreeClassifier or XGBClassifier using the same composite index to 
         mirror the paper’s variety.
-
-        Use PermutationImportance or feature_importances_ to identify which predictors drive your “well-being tier” 
-        most strongly.
     """
 
     grid = {

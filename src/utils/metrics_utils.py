@@ -56,7 +56,7 @@ def process_chr_metric(df, var, reverse=False, year=None):
         return np.nansum(values[valid_mask] * weights[valid_mask]) / total_w
 
     if weight_col:
-        # Silence RuntimeWarnings, we’ll catch them ourselves
+        # Silence RuntimeWarnings
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", category=RuntimeWarning)
             state_df = (

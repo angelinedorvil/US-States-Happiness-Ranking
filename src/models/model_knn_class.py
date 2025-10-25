@@ -8,20 +8,12 @@ def train_model(X_train, y_train, out_dir):
     Train a k-Nearest Neighbors classifier with GridSearchCV and Stratified 5-Fold CV.
     Saves the best model and cross-validation results.
 
-    If you want to squeeze a bit more performance out of KNN before moving on:
-
-    Feature scaling check: you already normalized to 0–1, so that’s good.
-
     Try slightly larger k: [5, 7, 9, 11, 15] — can smooth over noise.
 
-    Add StandardScaler: even with 0–1 normalization, StandardScaler can center the data 
-    (important if distributions are skewed).
+    Add StandardScaler
 
-    Visualize confusion matrix heatmap: you can quickly see which tiers are confused with
-      each other — often 2↔3 or 3↔4.
+    Visualize confusion matrix heatmap
 
-    Stratify check: your dataset is small (50 states + territories), so class distribution matters. 
-    If some tiers have fewer members, macro F1 will drop faster.
     """
 
     # --- Hyperparameter grid ---
