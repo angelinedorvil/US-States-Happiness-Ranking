@@ -100,6 +100,7 @@ README.md	                    -> Project documentation (this file)
 
 ### 1. Install Environment
 ```bash
+
 git clone https://github.com/angelinedorvil/US-States-Happiness-Ranking.git
 
 cd US-States-Happiness-Ranking
@@ -114,31 +115,45 @@ python train_all_models.py *OR* use Notebooks (see below)
 Review notebooks above for detailed information with code examples of each stage. Each notebook can be run. Notebooks can be run **Sequencially** to reach paper outputs.
 
 1. (notebooks/01_data_exploration.ipynb) -> Load raw CHR and FBI data
+
 2. (notebooks/02_target_processing.ipynb) -> Create final_target_index_all_years.csv
+
 3. (notebooks/03_predictor_processing.ipynb) -> Create final_predictor_index_all_years.csv
 
 These files will appear under:
+
     results/norm_targets/
+
     results/norm_predictors/
 
 4. (notebooks/04_model_training_classification.ipynb) -> Not implemented for this milestone
+
 5. (notebooks/05_model_training_regression.ipynb) -> Runs train_all_models
 
 Train_all_models file will:
+
     - Load processed data
+
     - Train 9 regressors models
+
     - Save metrics to the results/ directory
 
 6. (notebooks/06_model_comparison_ttest.ipynb) -> Performs and saves analysis of models in plots and results directories
+
 7. (notebooks/07_feature_importance.ipynb) -> Calculate feature importance and permutation importance for models
 
 ## Metrics
 
 Some of the regression metrics completed were:
+
     - R² score
+
     - Adjusted R²
+
     - MAE, MSE, RMSE
+
     - Pearson Correlation Coefficient (r)
+
     - Matthews Correlation Coefficient (binned approximation)
 
 All regression evaluation is handled by evaluate_regression() in utils/evaluation_utils.py
@@ -146,22 +161,29 @@ All regression evaluation is handled by evaluate_regression() in utils/evaluatio
 ## Implementation details
 
 1. Normalization:
+
     - Each metric scaled from 0–1 using min–max normalization.
+
     - For metrics where “lower is better,” a reverse=True flag flips the scale.
 
 2. Composite Indexing:
+
     - Target index = weighted sum of normalized metrics + hate crime rate.
 
 3. Data Imputation:
+
     - Missing predictor values filled using SimpleImputer(strategy="mean").
 
 4. Cross-Validation:
+
     - KFold (regression) with 5 folds.
 
 5. Reproducibility:
+
     - All models share a global seed constant from config.RANDOM_STATE.
 
 ## References
+
 Janani, S. et al. (2023). Machine Learning for the Analysis of Quality of Life using World Happiness Index and Human Development Indicator.
 
 County Health Rankings & Roadmaps (2015-2025). University of Wisconsin Population Health Institute.
