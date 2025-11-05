@@ -4,52 +4,6 @@ from pathlib import Path
 from utils.plots_utils import plot_roc_pr_curves, regression_mcc_from_bins, paired_ttest_models
 from scipy.stats import pearsonr
 
-
-def evaluate_model(model, X_test, y_test, model_name, out_dir, plot_dir):
-    y_pred = model.predict(X_test)
-    acc = accuracy_score(y_test, y_pred)
-    rep = classification_report(y_test, y_pred, digits=3, output_dict=True)
-    cm  = confusion_matrix(y_test, y_pred)
-    auroc = None
-
-    try:
-        from sklearn.preprocessing import label_binarize
-        y_bin = label_binarize(y_test, classes=sorted(set(y_test)))
-        auroc = roc_auc_score(y_bin, model.predict_proba(X_test), multi_class='ovr', average='macro')
-    except Exception:
-        pass
-    out = {
-        "accuracy": acc,
-        "macro_f1": rep["macro avg"]["f1-score"],
-        "macro_precision": rep["macro avg"]["precision"],
-        "macro_recall": rep["macro avg"]["recall"],
-        "auroc_macro": auroc
-    }
-
-    Path(out_dir).mkdir(parents=True, exist_ok=True)
-    with open(Path(out_dir) / f"{model_name}_test_report.json", "w") as f:
-        json.dump(out, f, indent=2)
-    pd.DataFrame(cm).to_csv(Path(out_dir) / f"{model_name}_confusion_matrix.csv")
-
-    reports = []
-    for file in glob.glob(f"{out_dir}/*_test_report.json"):
-        name = Path(file).stem.replace("_test_report", "")
-        with open(file) as f:
-            d = json.load(f)
-            d["model"] = name
-            reports.append(d)
-
-    plot_roc_pr_curves(model, X_test, y_test, plot_dir, model_name)
-    ttest_results = paired_ttest_models(model, model, X_test, y_test, scoring='f1_macro', cv=4)
-
-    # print out ttest results
-    with open(Path(plot_dir) / f"{model_name}_ttest_results.json", "w") as f:
-        json.dump(ttest_results, f, indent=2)
-
-    print(f"Evaulation finished for {model_name} (Classification). Results saved to {out_dir}")
-    print(f"Report finished for {model_name} (Classification).")
-    return out
-
 def evaluate_regression(model, X_test, y_test, model_name, out_dir, plot_dir):
     # Predict and compute standard regression metrics
     n = len(y_test)

@@ -192,7 +192,7 @@ BEA_PREDICTOR_METRICS = {
 def process_bea_metrics_all_years(
     bea_path="data/SASUMMARY__ALL_AREAS_1998_2024.csv",
     arts_path="data/SAACArtsComp__ALL_AREAS_2001_2023.csv",
-    start_year=2014,
+    start_year=2015,
     end_year=2024
 ):
     """
@@ -261,7 +261,7 @@ def process_bea_metrics_all_years(
     arts_long["Value"] = pd.to_numeric(arts_long["Value"], errors="coerce")
     
     arts_long["Year"] = arts_long["Year"].astype(int)
-    arts_long = arts_long[(arts_long["Year"] >= 2013) & (arts_long["Year"] <= 2023)]
+    arts_long = arts_long[(arts_long["Year"] >= 2015) & (arts_long["Year"] <= 2023)]
 
     # Clean state names
     arts_long["State"] = arts_long["GeoName"].str.replace(" (Metropolitan Portion)", "", regex=False)

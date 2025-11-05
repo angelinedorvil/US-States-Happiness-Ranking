@@ -1924,28 +1924,7 @@ Processed v133_rawvalue (v133_denominator) ù reverse=False
 Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
 Hate Crime Data Processed
 Final Target Index (2015û2025) saved to results/norm_targets/final_target_index_all_years.csv
-Evaluation finished for RandomForest_regression (Regression). Results saved to results\models
-Report finished for RandomForest_regression (Regression).
-Evaluation finished for kNN_regression (Regression). Results saved to results\models
-Report finished for kNN_regression (Regression).
-Evaluation finished for DecisionTree_regression (Regression). Results saved to results\models
-Report finished for DecisionTree_regression (Regression).
-Evaluation finished for SVM_regression (Regression). Results saved to results\models
-Report finished for SVM_regression (Regression).
 Fitting 5 folds for each of 324 candidates, totalling 1620 fits
 Evaluation finished for XGBoost_regression (Regression). Results saved to results\models
 Report finished for XGBoost_regression (Regression).
-Fitting 5 folds for each of 5 candidates, totalling 25 fits
-Evaluation finished for Ridge_regression (Regression). Results saved to results\models
-Report finished for Ridge_regression (Regression).
-Fitting 5 folds for each of 6 candidates, totalling 30 fits
-Evaluation finished for Lasso_regression (Regression). Results saved to results\models
-Report finished for Lasso_regression (Regression).
-Evaluation finished for Linear_regression (Regression). Results saved to results\models
-Report finished for Linear_regression (Regression).
-Fitting 5 folds for each of 3 candidates, totalling 15 fits
-Evaluation finished for Polynomial_regression (Regression). Results saved to results\models
-Report finished for Polynomial_regression (Regression).
-Fitting 5 folds for each of 18 candidates, totalling 90 fits
-Evaluation finished for MLP_regression (Regression). Results saved to results\models
-Report finished for MLP_regression (Regression).
+SHAP failed for XGBoost_regression: could not convert string to float: '[5.59712E-1]'
