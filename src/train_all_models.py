@@ -2,11 +2,13 @@ from models import model_random_forest_regress, model_decision_tree_regress, mod
 from utils.evaluation_utils import evaluate_regression
 from utils.shap_utils import compute_and_plot_shap
 from config import RESULTS_DIR, PLOTS_DIR, RANDOM_STATE
-import pandas as pd, joblib, numpy as np
+import pandas as pd, joblib, numpy as np, glob
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 from process_predictor_data import build_predictor_index
 from process_target_data import build_target_index
+from pathlib import Path
 
 # Train 9 regressor models
 regressor_models = {
@@ -57,27 +59,36 @@ def fill_in_missing_values(X_train, X_test):
 
 def evaluate_and_save(models, X_test, y_test, X_train, y_train, model_directory, plot_directory, type, feature_names):
     for model_name, model_module in models.items():
-        if model_name in ["XGBoost_regression"]: # temporary fix for xgboost
-            model = model_module.train_model(X_train, y_train, model_directory)
-            evaluate_regression(model, X_test, y_test, model_name, model_directory, plot_directory)
-            if model_name in ["Ridge_regression", "Lasso_regression", "XGBoost_regression", "RandomForest_regression", "Linear_regression"]:
-                X_df = pd.DataFrame(X_test, columns=feature_names)
-                # --- Clean and convert X_df to pure numeric for SHAP ---
-                X_df = (
-                    X_df.astype(str)
-                    .replace(r"[\[\]]", "", regex=True)     # remove [ and ]
-                    .replace(r"[A-Za-z]", "", regex=True)   # remove stray letters like 'E' if needed
-                    .replace("", np.nan)                    # blank to NaN
-                )
+        model = model_module.train_model(X_train, y_train, model_directory)
+        evaluate_regression(model, X_test, y_test, model_name, model_directory, plot_directory)
+        if model_name in ["Ridge_regression", "Lasso_regression", "XGBoost_regression", "RandomForest_regression", "Linear_regression"]:
+            X_df = pd.DataFrame(X_test, columns=feature_names).astype(float)
+            print("X_df dtypes:\n", X_df.dtypes)
+            print("Any object cols? ->", X_df.select_dtypes(include=["object"]).columns.tolist())
+            print("Sample suspicious values:",
+                X_df.apply(lambda s: s.astype(str).str.contains(r"\[|\]|E-").any()).to_dict())
+            compute_and_plot_shap(model, X_df, model_name, plot_directory)
 
-                # Convert all columns to numeric
-                for col in X_df.columns:
-                    X_df[col] = pd.to_numeric(X_df[col], errors="coerce")
+    files = glob.glob(str(plot_directory / "*_shap_summary.csv"))
 
-                # Drop any columns that became fully NaN (just in case)
-                X_df = X_df.dropna(axis=1, how="all")
+    dfs = []
+    for f in files:
+        model = Path(f).stem.replace("_shap_summary", "")
+        df = pd.read_csv(f).assign(model=model)
+        dfs.append(df)
+    all_df = pd.concat(dfs)
 
-                compute_and_plot_shap(model, X_df, model_name, plot_directory)
+    top10 = (all_df.groupby("model", group_keys=False).apply(lambda x: x.sort_values("mean_abs_shap", ascending=False).head(10)))
+    
+    stability = (top10.groupby("feature")["model"].nunique()
+                 .reset_index(name="n_models_in_top10")
+                 .sort_values("n_models_in_top10", ascending=False))
+    
+    stability["pct_models_in_top10"] = stability["n_models_in_top10"] / top10["model"].nunique() * 100
+
+    stability.to_csv(plot_directory / "shap_stability_across_models.csv", index=False)
+
+    print(stability.head(20))
 
 if __name__ == "__main__":
     # build_target_index() 
