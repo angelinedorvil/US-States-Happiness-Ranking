@@ -5,7 +5,7 @@ import glob
 from utils.metrics_utils import process_chr_metric, normalize
 
 # Years of data to consider
-YEARS = range(2020, 2026)  # 2015–2025 inclusive
+YEARS = range(2025, 2026)  # 2015–2025 inclusive
 
 # === Target metrics from County Health Rankings ===
 TARGET_METRICS = {
@@ -83,7 +83,7 @@ def classify_percentiles(df, column="env_safety_index", n_classes=5):
 # Process hate crime data
 def process_hate_crime(path="data/hate_crime.csv"):
     df = pd.read_csv(path)
-    df = df[df["data_year"] >= 2020]
+    df = df[df["data_year"] >= 2025]
     df_state = df.groupby("state_name", as_index=False)["incident_id"].count()
     df_state.rename(columns={"state_name": "State", "incident_id": "hate_crime_count"}, inplace=True)
     df_state["hate_crime_norm"] = normalize(df_state["hate_crime_count"], reverse=True)
@@ -177,14 +177,14 @@ def build_target_index():
 
     # === Save outputs ===
     os.makedirs("results/norm_targets", exist_ok=True)
-    out_csv = "results/norm_targets/final_target_index_5_years.csv"
-    out_txt = "results/norm_targets/final_target_index_5_years.txt"
+    out_csv = "results/norm_targets/final_target_index_1_years.csv"
+    out_txt = "results/norm_targets/final_target_index_1_years.txt"
 
     merged.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(merged[["State", "target_index", "Percentile_Class"]].to_string(index=False))
 
-    print(f"Final Target Index (2020–2025) saved to {out_csv}")
+    print(f"Final Target Index (2025) saved to {out_csv}")
     return merged
 
 # Testing functions

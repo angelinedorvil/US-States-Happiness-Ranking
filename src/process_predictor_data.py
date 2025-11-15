@@ -6,7 +6,7 @@ import os
 from utils.metrics_utils import process_chr_metric, normalize
 
 # Years of data to consider
-YEARS = range(2020, 2026)  # 2015–2025 inclusive
+YEARS = range(2025, 2026)  # 2015–2025 inclusive
 
 # === Predictor metrics from County Health Rankings ===
 PREDICTOR_METRICS = {
@@ -192,7 +192,7 @@ BEA_PREDICTOR_METRICS = {
 def process_bea_metrics_all_years(
     bea_path="data/SASUMMARY__ALL_AREAS_1998_2024.csv",
     arts_path="data/SAACArtsComp__ALL_AREAS_2001_2023.csv",
-    start_year=2020,
+    start_year=2024,
     end_year=2024
 ):
     """
@@ -261,7 +261,8 @@ def process_bea_metrics_all_years(
     arts_long["Value"] = pd.to_numeric(arts_long["Value"], errors="coerce")
     
     arts_long["Year"] = arts_long["Year"].astype(int)
-    arts_long = arts_long[(arts_long["Year"] >= 2020) & (arts_long["Year"] <= 2023)]
+    # arts_long = arts_long[(arts_long["Year"] >= 2023) & (arts_long["Year"] <= 2023)]
+    arts_long = arts_long[(arts_long["Year"] == 2023)]
 
     # Clean state names
     arts_long["State"] = arts_long["GeoName"].str.replace(" (Metropolitan Portion)", "", regex=False)
@@ -389,14 +390,14 @@ def build_predictor_index():
 
     # === Save outputs ===
     os.makedirs("results/norm_predictors", exist_ok=True)
-    out_csv = "results/norm_predictors/final_predictor_index_5_years.csv"
-    out_txt = "results/norm_predictors/final_predictor_index_5_years.txt"
+    out_csv = "results/norm_predictors/final_predictor_index_1_years.csv"
+    out_txt = "results/norm_predictors/final_predictor_index_1_years.txt"
 
     chr_df.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(chr_df[["State", "predictor_index"]].to_string(index=False))
 
-    print(f"Final Predicotr Index (2020–2025) saved to {out_csv}")
+    print(f"Final Predicotr Index (2025) saved to {out_csv}")
     return chr_df
 
 # Testing functions

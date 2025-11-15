@@ -1,0 +1,16 @@
+{
+  "best_params": {
+    "criterion": "friedman_mse",
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2
+  },
+  "cv_r2_mean": 0.6357472445703053,
+  "cv_r2_per_fold": [
+    0.8689880528571658,
+    0.9084664370762227,
+    0.7881394965174635,
+    -0.05594167628726621,
+    0.66908391268794
+  ]
+}
