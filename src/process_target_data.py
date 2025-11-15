@@ -83,7 +83,7 @@ def classify_percentiles(df, column="env_safety_index", n_classes=5):
 # Process hate crime data
 def process_hate_crime(path="data/hate_crime.csv"):
     df = pd.read_csv(path)
-    df = df[df["data_year"] >= 2015]
+    df = df[df["data_year"] >= 2020]
     df_state = df.groupby("state_name", as_index=False)["incident_id"].count()
     df_state.rename(columns={"state_name": "State", "incident_id": "hate_crime_count"}, inplace=True)
     df_state["hate_crime_norm"] = normalize(df_state["hate_crime_count"], reverse=True)

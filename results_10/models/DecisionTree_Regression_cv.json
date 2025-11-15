@@ -1,0 +1,16 @@
+{
+  "best_params": {
+    "criterion": "absolute_error",
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "min_samples_split": 10
+  },
+  "cv_r2_mean": 0.5425252539678428,
+  "cv_r2_per_fold": [
+    -0.008190948293268496,
+    0.6785658147174464,
+    0.5885540419572584,
+    0.613996269864598,
+    0.8397010915931794
+  ]
+}
