@@ -27,8 +27,8 @@ regressor_models = {
 
 def regression_initialization():
     # Load datasets
-    df = pd.read_csv("results/norm_predictors/final_predictor_index_all_years.csv").merge(
-        pd.read_csv("results/norm_targets/final_target_index_all_years.csv")[["State","target_index"]],
+    df = pd.read_csv("results/norm_predictors/final_predictor_index_5_years.csv").merge(
+        pd.read_csv("results/norm_targets/final_target_index_5_years.csv")[["State","target_index"]],
         on="State", how="inner"
     )
 
@@ -84,13 +84,13 @@ def evaluate_and_save(models, X_test, y_test, X_train, y_train, model_directory,
                  .reset_index(name="n_models_in_top10")
                  .sort_values("n_models_in_top10", ascending=False))
     
-    stability["pct_models_in_top10"] = stability["n_models_in_top10"] / top10["model"].nunique() * 100
+    stability["pct_models_in_top5_5yrs"] = stability["n_models_in_top10"] / top10["model"].nunique() * 100
 
-    stability.to_csv(plot_directory / "shap_stability_across_models.csv", index=False)
+    stability.to_csv(plot_directory / "shap_stability_across_models_5yrs.csv", index=False)
 
     print(stability.head(20))
 
 if __name__ == "__main__":
-    # build_target_index() 
-    # build_predictor_index()
+    build_target_index() 
+    build_predictor_index()
     regression_initialization()

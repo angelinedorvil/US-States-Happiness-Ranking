@@ -5,7 +5,7 @@ import glob
 from utils.metrics_utils import process_chr_metric, normalize
 
 # Years of data to consider
-YEARS = range(2015, 2026)  # 2015–2025 inclusive
+YEARS = range(2020, 2026)  # 2015–2025 inclusive
 
 # === Target metrics from County Health Rankings ===
 TARGET_METRICS = {
@@ -177,14 +177,14 @@ def build_target_index():
 
     # === Save outputs ===
     os.makedirs("results/norm_targets", exist_ok=True)
-    out_csv = "results/norm_targets/final_target_index_all_years.csv"
-    out_txt = "results/norm_targets/final_target_index_all_years.txt"
+    out_csv = "results/norm_targets/final_target_index_5_years.csv"
+    out_txt = "results/norm_targets/final_target_index_5_years.txt"
 
     merged.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(merged[["State", "target_index", "Percentile_Class"]].to_string(index=False))
 
-    print(f"Final Target Index (2015–2025) saved to {out_csv}")
+    print(f"Final Target Index (2020–2025) saved to {out_csv}")
     return merged
 
 # Testing functions

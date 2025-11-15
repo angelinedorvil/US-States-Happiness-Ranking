@@ -1544,7 +1544,7 @@ Processed v042_rawvalue (v051_rawvalue (population)) ù reverse=True
 Processed v144_rawvalue (v051_rawvalue (population)) ù reverse=True
 Processed v145_rawvalue (v051_rawvalue (population)) ù reverse=True
 Processed v147_rawvalue (v051_rawvalue (population)) ù reverse=False
-Final Predicotr Index (2015û2025) saved to results/norm_predictors/final_predictor_index_all_years.csv
+Final Predicotr Index (2015û2025) saved to results/norm_predictors/final_predictor_index_10_years.csv
 Processed v001_rawvalue (v001_denominator) ù reverse=True
 Processed v127_rawvalue (v127_denominator) ù reverse=True
 Processed v128_rawvalue (v128_denominator) ù reverse=True
@@ -1927,7 +1927,7 @@ Processed v083_rawvalue (v083_denominator) ù reverse=True
 Processed v133_rawvalue (v133_denominator) ù reverse=False
 Processed v155_rawvalue (v051_rawvalue (population)) ù reverse=False
 Hate Crime Data Processed
-Final Target Index (2015û2025) saved to results/norm_targets/final_target_index_all_years.csv
+Final Target Index (2015û2025) saved to results/norm_targets/final_target_index_10_years.csv
 Evaluation finished for RandomForest_regression (Regression). Results saved to results\models
 Report finished for RandomForest_regression (Regression).
 X_df dtypes:
@@ -2055,23 +2055,23 @@ Sample suspicious values: {'v009_rawvalue_norm': False, 'v011_rawvalue_norm': Fa
 TreeExplainer failed for XGBoost, fallback to KernelExplainer: could not convert string to float: '[5.59712E-1]'
 
   0%|          | 0/16 [00:00<?, ?it/s]
-  6%|6         | 1/16 [00:00<00:02,  5.35it/s]
- 12%|#2        | 2/16 [00:00<00:02,  5.77it/s]
- 19%|#8        | 3/16 [00:00<00:02,  5.81it/s]
+  6%|6         | 1/16 [00:00<00:03,  4.95it/s]
+ 12%|#2        | 2/16 [00:00<00:02,  5.54it/s]
+ 19%|#8        | 3/16 [00:00<00:02,  5.73it/s]
  25%|##5       | 4/16 [00:00<00:02,  5.81it/s]
- 31%|###1      | 5/16 [00:00<00:01,  5.86it/s]
- 38%|###7      | 6/16 [00:01<00:01,  5.90it/s]
- 44%|####3     | 7/16 [00:01<00:01,  5.87it/s]
- 50%|#####     | 8/16 [00:01<00:01,  5.80it/s]
- 56%|#####6    | 9/16 [00:01<00:01,  5.77it/s]
- 62%|######2   | 10/16 [00:01<00:01,  5.83it/s]
- 69%|######8   | 11/16 [00:01<00:00,  5.96it/s]
- 75%|#######5  | 12/16 [00:02<00:00,  5.97it/s]
- 81%|########1 | 13/16 [00:02<00:00,  5.99it/s]
- 88%|########7 | 14/16 [00:02<00:00,  5.99it/s]
- 94%|#########3| 15/16 [00:02<00:00,  5.91it/s]
-100%|##########| 16/16 [00:02<00:00,  5.84it/s]
-100%|##########| 16/16 [00:02<00:00,  5.86it/s]
+ 31%|###1      | 5/16 [00:00<00:01,  5.98it/s]
+ 38%|###7      | 6/16 [00:01<00:01,  5.23it/s]
+ 44%|####3     | 7/16 [00:01<00:01,  4.86it/s]
+ 50%|#####     | 8/16 [00:01<00:01,  5.17it/s]
+ 56%|#####6    | 9/16 [00:01<00:01,  5.35it/s]
+ 62%|######2   | 10/16 [00:01<00:01,  5.52it/s]
+ 69%|######8   | 11/16 [00:02<00:00,  5.76it/s]
+ 75%|#######5  | 12/16 [00:02<00:00,  5.94it/s]
+ 81%|########1 | 13/16 [00:02<00:00,  6.07it/s]
+ 88%|########7 | 14/16 [00:02<00:00,  6.16it/s]
+ 94%|#########3| 15/16 [00:02<00:00,  6.26it/s]
+100%|##########| 16/16 [00:02<00:00,  6.29it/s]
+100%|##########| 16/16 [00:02<00:00,  5.75it/s]
 C:\Users\angel\US-States-Happiness-Ranking\src\train_all_models.py:81: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
   top10 = (all_df.groupby("model", group_keys=False).apply(lambda x: x.sort_values("mean_abs_shap", ascending=False).head(10)))
 SHAP failed for XGBoost_regression: 'NoneType' object has no attribute 'shape'
@@ -2260,24 +2260,24 @@ Report finished for Polynomial_regression (Regression).
 Fitting 5 folds for each of 18 candidates, totalling 90 fits
 Evaluation finished for MLP_regression (Regression). Results saved to results\models
 Report finished for MLP_regression (Regression).
-                feature  n_models_in_top10  pct_models_in_top10
-7    v014_rawvalue_norm                  5                100.0
-20   v149_rawvalue_norm                  5                100.0
-19   v147_rawvalue_norm                  4                 80.0
-0       arts_ratio_norm                  3                 60.0
-5    v009_rawvalue_norm                  3                 60.0
-13   v063_rawvalue_norm                  3                 60.0
-14   v085_rawvalue_norm                  3                 60.0
-8    v024_rawvalue_norm                  2                 40.0
-6    v011_rawvalue_norm                  2                 40.0
-21   v153_rawvalue_norm                  2                 40.0
-23   v168_rawvalue_norm                  2                 40.0
-16   v132_rawvalue_norm                  2                 40.0
-24   v169_rawvalue_norm                  2                 40.0
-1           pc_pce_norm                  1                 20.0
-2   real_gdp_total_norm                  1                 20.0
-3        rpp_index_norm                  1                 20.0
-4    v005_rawvalue_norm                  1                 20.0
-15   v131_rawvalue_norm                  1                 20.0
-10   v045_rawvalue_norm                  1                 20.0
-11   v049_rawvalue_norm                  1                 20.0
+                feature  n_models_in_top10  pct_models_in_top10_10yrs
+7    v014_rawvalue_norm                  5                      100.0
+20   v149_rawvalue_norm                  5                      100.0
+19   v147_rawvalue_norm                  4                       80.0
+0       arts_ratio_norm                  3                       60.0
+5    v009_rawvalue_norm                  3                       60.0
+13   v063_rawvalue_norm                  3                       60.0
+14   v085_rawvalue_norm                  3                       60.0
+8    v024_rawvalue_norm                  2                       40.0
+6    v011_rawvalue_norm                  2                       40.0
+21   v153_rawvalue_norm                  2                       40.0
+23   v168_rawvalue_norm                  2                       40.0
+16   v132_rawvalue_norm                  2                       40.0
+24   v169_rawvalue_norm                  2                       40.0
+1           pc_pce_norm                  1                       20.0
+2   real_gdp_total_norm                  1                       20.0
+3        rpp_index_norm                  1                       20.0
+4    v005_rawvalue_norm                  1                       20.0
+15   v131_rawvalue_norm                  1                       20.0
+10   v045_rawvalue_norm                  1                       20.0
+11   v049_rawvalue_norm                  1                       20.0

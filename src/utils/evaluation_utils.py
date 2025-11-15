@@ -51,7 +51,7 @@ def evaluate_regression(model, X_test, y_test, model_name, out_dir, plot_dir):
         plt.plot(lims, lims, 'k--'); plt.xlabel('True'); plt.ylabel('Pred')
         plt.title(f'{model_name}: y_true vs y_pred (r={pcc:.2f})')
         plt.tight_layout()
-        plt.savefig(Path(plot_dir)/f"{model_name}_scatter_true_vs_pred.png", dpi=150)
+        plt.savefig(Path(plot_dir)/f"{model_name}_scatter_true_vs_pred_10yrs.png", dpi=150)
         plt.close()
     except Exception:
         pass

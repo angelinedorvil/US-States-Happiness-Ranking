@@ -6,7 +6,7 @@ import os
 from utils.metrics_utils import process_chr_metric, normalize
 
 # Years of data to consider
-YEARS = range(2015, 2026)  # 2015–2025 inclusive
+YEARS = range(2020, 2026)  # 2015–2025 inclusive
 
 # === Predictor metrics from County Health Rankings ===
 PREDICTOR_METRICS = {
@@ -389,14 +389,14 @@ def build_predictor_index():
 
     # === Save outputs ===
     os.makedirs("results/norm_predictors", exist_ok=True)
-    out_csv = "results/norm_predictors/final_predictor_index_all_years.csv"
-    out_txt = "results/norm_predictors/final_predictor_index_all_years.txt"
+    out_csv = "results/norm_predictors/final_predictor_index_5_years.csv"
+    out_txt = "results/norm_predictors/final_predictor_index_5_years.txt"
 
     chr_df.to_csv(out_csv, index=False)
     with open(out_txt, "w", encoding="utf-8") as f:
         f.write(chr_df[["State", "predictor_index"]].to_string(index=False))
 
-    print(f"Final Predicotr Index (2015–2025) saved to {out_csv}")
+    print(f"Final Predicotr Index (2020–2025) saved to {out_csv}")
     return chr_df
 
 # Testing functions
