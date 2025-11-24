@@ -89,6 +89,8 @@ notebooks/05_model_training_regression.ipynb
 notebooks/06_model_comparison_ttest.ipynb	
 
 notebooks/07_feature_importance.ipynb	
+
+notebooks/08_shap_analysis.ipynb
 </details>
 
 
@@ -156,9 +158,13 @@ Some of the regression metrics completed were:
 
     - Matthews Correlation Coefficient (binned approximation)
 
+    - SHAP values were computed for the highest-performing models to evaluate predictor influence and stability     
+    
+      across temporal windows
+
 All regression evaluation is handled by evaluate_regression() in utils/evaluation_utils.py
 
-## Implementation details
+## Base Implementation details
 
 1. Normalization:
 
@@ -182,10 +188,50 @@ All regression evaluation is handled by evaluate_regression() in utils/evaluatio
 
     - All models share a global seed constant from config.RANDOM_STATE.
 
-## References
+## Milestone 3 Enhancements
 
-Janani, S. et al. (2023). Machine Learning for the Analysis of Quality of Life using World Happiness Index and Human Development Indicator.
+This milestone expands the project beyond the baseline Milestone 2 pipeline through three key improvements:
+
+1. **Integration of BEA Macroeconomic and Cultural Indicators**
+
+   - Added state-level real GDP, real personal income, personal consumption expenditures, employment, disposable income, and
+   
+    *arts/cultural compensation ratio* using BEA SASUMMARY and ACPSA data.
+
+   - All predictors were reshaped, cleaned, and normalized following the same methodology used in Milestone 2.
+
+2. **SHAP Explainability Analysis**
+
+   - Implemented SHAP values for the five best-performing models:
+
+     `Ridge, Lasso, Linear Regression, RandomForest, XGBoost`.
+
+   - Cross-model SHAP stability tables saved to:
+
+     ```
+     results/models/shap_*/  (CSV exports for each model)
+
+     results/plots/          (visualization outputs)
+     ```
+
+3. **Temporal Window Evaluation**
+
+   - Retrained full pipeline using **three time horizons**:
+
+     - *10-year composite (2015–2025)*
+
+     - *5-year window (2020–2025)*
+
+     - *1-year snapshot (2025 only)*
+
+   - Each window generates separate predictor/target indices
+
+## References
 
 County Health Rankings & Roadmaps (2015-2025). University of Wisconsin Population Health Institute.
 
 Federal Bureau of Investigation (FBI) Hate Crime Data (1991-2025).
+
+Janani, S. et al. (2023). Machine Learning for the Analysis of Quality of Life using World Happiness Index and Human Development Indicator.
+
+Khan AE, Hasan MJ, Anjum H, Mohammed N, Momen S. Predicting life satisfaction using machine learning and explainable AI. Heliyon. 2024.
